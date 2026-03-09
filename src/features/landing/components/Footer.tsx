@@ -9,21 +9,21 @@ export const Footer = () => {
           <p>AI-powered cricket match prediction and analysis. Built on data. Designed for fans who want the edge.</p>
         </div>
         <div className="footer-col">
-          <h4>Product</h4>
+          <h3>Product</h3>
           <Link href="/predictions">Predictions</Link>
           <Link href="/player-analysis">Player Analysis</Link>
           <Link href="/venue-reports">Venue Reports</Link>
           <Link href="/how-it-works">How it Works</Link>
         </div>
         <div className="footer-col">
-          <h4>Company</h4>
+          <h3>Company</h3>
           <Link href="/about-us">About AICRIX</Link>
           <Link href="/accuracy-reports">Accuracy Reports</Link>
           <Link href="/contact-us">Contact</Link>
           <Link href="/blog">Blog</Link>
         </div>
         <div className="footer-col">
-          <h4>Legal</h4>
+          <h3>Legal</h3>
           <Link href="/privacy-policy">Privacy Policy</Link>
           <Link href="/terms-and-conditions">Terms of Use</Link>
           <Link href="/contact-us">Support</Link>

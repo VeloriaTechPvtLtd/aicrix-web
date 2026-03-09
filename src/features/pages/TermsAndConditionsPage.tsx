@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { PageLayout, Section, InfoRow } from './PageLayout';
 
 export const TermsAndConditionsPage = () => {
@@ -41,7 +42,7 @@ export const TermsAndConditionsPage = () => {
                     <li>Marketing and promotional communications (with your consent)</li>
                     <li>Compliance with legal obligations</li>
                 </ul>
-                <p className="mt-2">For comprehensive details regarding data collection, use, and protection, please refer to our <a href="/privacy-policy" >Privacy Policy</a>.</p>
+                <p className="mt-2">For comprehensive details regarding data collection, use, and protection, please refer to our <Link href="/privacy-policy">Privacy Policy</Link>.</p>
             </Section>
 
             <Section title="4. User Eligibility and Account">

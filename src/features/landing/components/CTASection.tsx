@@ -28,6 +28,7 @@ export const CTASection = () => {
                         <input
                             type="email"
                             placeholder="Your Email"
+                            aria-label="Your email address"
                             className="w-full sm:flex-1 pl-5 pr-4 py-3.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/25 transition-all duration-300"
                         />
                         <button className="w-full sm:w-auto group px-7 py-3.5 bg-gradient-to-r from-purple-600 to-violet-500 hover:from-purple-500 hover:to-violet-400 text-white font-semibold rounded-full transition-all duration-300 shadow-[0_0_25px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center gap-2 text-sm whitespace-nowrap">

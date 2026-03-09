@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://aicrix.com
+
+# Sitemaps
 Sitemap: https://aicrix.com/sitemap.xml

@@ -1,5 +1,5 @@
 'use client';
-import { Mail, Phone, MapPin, Clock, AlertCircle, Building, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, AlertCircle, Building, Send, Trash2 } from 'lucide-react';
 import { PageLayout, Section, InfoRow } from './PageLayout';
 import { useState } from 'react';
 
@@ -18,7 +18,7 @@ export const ContactUsPage = () => {
                     <div className="w-10 h-10 rounded-xl page-icon-wrap-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                         <Mail className="w-5 h-5" />
                     </div>
-                    <h3 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Email Support</h3>
+                    <h2 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Email Support</h2>
                     <a href="mailto:support@aicrix.com" className="text-sm transition-colors">support@aicrix.com</a>
                 </div>
 
@@ -26,7 +26,7 @@ export const ContactUsPage = () => {
                     <div className="w-10 h-10 rounded-xl page-icon-wrap-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                         <Phone className="w-5 h-5" />
                     </div>
-                    <h3 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Phone</h3>
+                    <h2 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Phone</h2>
                     <a href="tel:+919505962262" className="text-sm transition-colors">+91 95059 62262</a>
                 </div>
 
@@ -34,7 +34,7 @@ export const ContactUsPage = () => {
                     <div className="w-10 h-10 rounded-xl page-icon-wrap-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                         <MapPin className="w-5 h-5" />
                     </div>
-                    <h3 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Office Address</h3>
+                    <h2 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Office Address</h2>
                     <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>12-132, Main Road, Pedda Devaram Padu, Ammanabrolu, Ongole Mandal, Prakasham, 523180, Andhra Pradesh, India</p>
                 </div>
 
@@ -42,7 +42,7 @@ export const ContactUsPage = () => {
                     <div className="w-10 h-10 rounded-xl page-icon-wrap-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                         <Clock className="w-5 h-5" />
                     </div>
-                    <h3 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Operating Hours</h3>
+                    <h2 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Operating Hours</h2>
                     <p className="text-sm" style={{ color: 'var(--muted)' }}>Monday – Saturday<br />9:00 AM – 6:00 PM IST</p>
                 </div>
             </div>
@@ -55,22 +55,26 @@ export const ContactUsPage = () => {
                             type="text" placeholder="Your Name" value={formData.name}
                             onChange={e => setFormData(d => ({ ...d, name: e.target.value }))}
                             className="w-full px-4 py-3 rounded-xl page-input text-sm transition-all"
+                            aria-label="Your Name"
                         />
                         <input
                             type="email" placeholder="Your Email" value={formData.email}
                             onChange={e => setFormData(d => ({ ...d, email: e.target.value }))}
                             className="w-full px-4 py-3 rounded-xl page-input text-sm transition-all"
+                            aria-label="Your Email"
                         />
                     </div>
                     <input
                         type="text" placeholder="Subject" value={formData.subject}
                         onChange={e => setFormData(d => ({ ...d, subject: e.target.value }))}
                         className="w-full px-4 py-3 rounded-xl page-input text-sm transition-all mb-4"
+                        aria-label="Subject"
                     />
                     <textarea
                         placeholder="Your Message" rows={5} value={formData.message}
                         onChange={e => setFormData(d => ({ ...d, message: e.target.value }))}
                         className="w-full px-4 py-3 rounded-xl page-input text-sm transition-all mb-4 resize-none"
+                        aria-label="Your Message"
                     />
                     <button type="button" className="group px-6 py-3 page-btn-primary text-sm flex items-center gap-2">
                         <Send className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -126,6 +130,24 @@ export const ContactUsPage = () => {
                             <div className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{item.time}</div>
                         </div>
                     ))}
+                </div>
+            </Section>
+
+            {/* User Data Deletion */}
+            <Section title="User Data Deletion">
+                <div className="p-4 sm:p-5 rounded-2xl page-card">
+                    <div className="flex items-start gap-3 mb-3">
+                        <Trash2 className="w-5 h-5 shrink-0 mt-0.5" style={{ color: 'var(--accent)' }} />
+                        <p className="text-sm" style={{ color: 'var(--muted)' }}>
+                            If you wish to delete your account and associated personal data, you can submit a data deletion request to our support team.
+                        </p>
+                    </div>
+                    <InfoRow label="Email" value="support@aicrix.com" href="mailto:support@aicrix.com?subject=User%20Data%20Deletion%20Request" />
+                    <InfoRow label="Required Info" value="Please send the email from your registered email address and include your username/account details." />
+                    <InfoRow label="Processing Time" value="Requests are typically processed within 30 days of verification." />
+                    <p className="text-xs mt-3" style={{ color: 'var(--muted)', opacity: 0.8 }}>
+                        Note: Some data may be retained for legal, security, or fraud prevention purposes as outlined in our Privacy Policy.
+                    </p>
                 </div>
             </Section>
 

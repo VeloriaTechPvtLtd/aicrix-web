@@ -1,6 +1,8 @@
 /* AICRIX Landing – design system (matches provided HTML) */
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .landing-page {
@@ -1533,6 +1535,18 @@ html {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
+.landing-page .nav-links a:focus-visible,
+.landing-page .nav-cta:focus-visible,
+.landing-page .nav-mobile-toggle:focus-visible,
+.landing-page .nav-mobile-drawer a:focus-visible,
+.landing-page .btn-primary:focus-visible,
+.landing-page .btn-secondary:focus-visible,
+.landing-page .footer-col a:focus-visible,
+.landing-page .app-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .landing-page .app-btn-icon {
   display: inline-flex;
   align-items: center;
@@ -1604,7 +1618,7 @@ html {
   line-height: 1.7;
 }
 
-.landing-page .footer-col h4 {
+.landing-page .footer-col h3 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;

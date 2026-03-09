@@ -9,7 +9,7 @@ export const DownloadSection = () => {
         <h2 className="section-title reveal">Make Smarter Cricket<br /><span style={{ color: 'var(--accent)' }}>Decisions with AI</span></h2>
         <p className="section-sub reveal">All predictions, player impact scores, live match momentum and venue intelligence — in your pocket.</p>
         <div className="app-btns reveal">
-          <a href="#" className="app-btn">
+          <button type="button" className="app-btn" aria-label="Download on Google Play">
             <span className="app-btn-icon" aria-hidden>
               <GooglePlayIcon />
             </span>
@@ -17,8 +17,8 @@ export const DownloadSection = () => {
               <div className="small">GET IT ON</div>
               <div className="big">Google Play</div>
             </div>
-          </a>
-          <a href="#" className="app-btn">
+          </button>
+          <button type="button" className="app-btn" aria-label="Download on App Store">
             <span className="app-btn-icon" aria-hidden>
               <AppleIcon />
             </span>
@@ -26,7 +26,7 @@ export const DownloadSection = () => {
               <div className="small">DOWNLOAD ON THE</div>
               <div className="big">App Store</div>
             </div>
-          </a>
+          </button>
         </div>
         <div className="trust-line reveal">
           <Check className="w-4 h-4 shrink-0" aria-hidden />
