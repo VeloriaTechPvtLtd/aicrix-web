@@ -38,8 +38,9 @@ export const PageLayout = ({ title, lastUpdated, children }: { title: string; la
             <footer className="page-footer">
                 <div className="container mx-auto px-4 sm:px-8 max-w-4xl flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
                     <span className="page-footer-copy">&copy; {new Date().getFullYear()} AICRIX. All rights reserved.</span>
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-5 flex-wrap justify-center">
                         <Link href="/privacy-policy">Privacy Policy</Link>
+                        <Link href="/data-deletion">Data Deletion</Link>
                         <Link href="/terms-and-conditions">Terms</Link>
                         <Link href="/contact-us">Contact</Link>
                     </div>

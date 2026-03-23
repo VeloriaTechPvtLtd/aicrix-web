@@ -282,7 +282,7 @@ export const TermsAndConditionsPage = () => {
                 <div className="p-4 rounded-xl page-card mt-2">
                     <InfoRow label="Company" value="VELORIA TECH (OPC) PRIVATE LIMITED" />
                     <InfoRow label="Email" value="support@aicrix.com" href="mailto:support@aicrix.com?subject=Legal Inquiry" />
-                    <InfoRow label="Phone" value="+91 95059 62262" href="tel:+919505962262" />
+                    <InfoRow label="Phone" value="+91 63615 62262" href="tel:+916361562262" />
                     <InfoRow label="Website" value="https://aicrix.com/contact-us" href="/contact-us" />
                     <InfoRow label="Address" value="12-132, Main Road, Pedda Devaram Padu, Ammanabrolu, Ongole Mandal, Prakasham, 523180, Andhra Pradesh, India" />
                 </div>

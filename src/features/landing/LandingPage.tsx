@@ -26,6 +26,17 @@ function Navbar() {
     return () => window.removeEventListener('resize', handler);
   }, []);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   const closeAndGo = () => setMobileOpen(false);
 
   return (
@@ -36,7 +47,11 @@ function Navbar() {
         <li><a href="#how">How it Works</a></li>
         <li><a href="#analysis">Analysis</a></li>
         <li><a href="#download">Get App</a></li>
-        <li><a href="#download" className="nav-cta inline-flex items-center gap-1">View Predictions <ArrowRight className="w-3.5 h-3.5" /></a></li>
+        <li>
+          <a href="#download" className="nav-cta inline-flex items-center gap-1">
+            View Predictions <ArrowRight size={16} />
+          </a>
+        </li>
       </ul>
       <button
         type="button"
@@ -52,7 +67,9 @@ function Navbar() {
         <a href="#how" onClick={closeAndGo}>How it Works</a>
         <a href="#analysis" onClick={closeAndGo}>Analysis</a>
         <a href="#download" onClick={closeAndGo}>Get App</a>
-        <a href="#download" className="nav-cta inline-flex items-center gap-1" onClick={closeAndGo}>View Predictions <ArrowRight className="w-3.5 h-3.5" /></a>
+        <a href="#download" className="nav-cta inline-flex items-center gap-1" onClick={closeAndGo}>
+          View Predictions <ArrowRight size={16} />
+        </a>
       </div>
     </nav>
   );
@@ -81,7 +98,7 @@ export const LandingPage = () => {
   return (
     <div className="landing-page">
       <Navbar />
-      <main id="main-content">
+      <main id="main-content" className="landing-main">
         <HeroSection />
         <TickerSection />
         <article aria-label="Features and capabilities">

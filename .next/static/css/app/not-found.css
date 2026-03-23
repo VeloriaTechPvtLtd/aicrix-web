@@ -46,8 +46,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  gap: 0.75rem;
+  padding: 0 clamp(12px, 4vw, 5%);
   height: 64px;
+  min-height: 56px;
   background: rgba(5, 8, 16, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -56,10 +58,11 @@
 .page-layout-aicrix .page-nav-logo {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
   letter-spacing: -0.5px;
   color: var(--text);
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .page-layout-aicrix .page-nav-logo span {
@@ -71,10 +74,12 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2.8vw, 0.9rem);
   font-weight: 500;
   text-decoration: none;
   transition: color 0.2s;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .page-layout-aicrix .page-nav-back:hover {
@@ -144,6 +149,9 @@
 /* Prose / body – override Tailwind text-white/40 etc. so theme wins */
 .page-layout-aicrix .prose-content {
   color: var(--text);
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .page-layout-aicrix .prose-content p,
@@ -171,6 +179,11 @@
 }
 
 /* Blog post markdown body */
+.page-layout-aicrix .blog-post-body {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 .page-layout-aicrix .blog-post-body h1,
 .page-layout-aicrix .blog-post-body h2 {
   color: var(--text);
@@ -193,6 +206,45 @@
   border-radius: 4px;
   background: var(--surface);
   color: var(--accent);
+}
+.page-layout-aicrix .blog-post-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.page-layout-aicrix .blog-post-body pre code {
+  padding: 0;
+  background: transparent;
+  font-size: inherit;
+}
+.page-layout-aicrix .blog-post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.page-layout-aicrix .blog-post-body .table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.75em 0;
+}
+.page-layout-aicrix .blog-post-body table {
+  width: 100%;
+  min-width: min(100%, 280px);
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.page-layout-aicrix .blog-post-body th,
+.page-layout-aicrix .blog-post-body td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.65rem;
+  text-align: left;
 }
 
 /* Section component */

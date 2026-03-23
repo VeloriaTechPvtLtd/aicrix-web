@@ -100,7 +100,7 @@ export const AboutUsPage = () => {
                     <InfoRow label="Country" value="India" />
                     <InfoRow label="Website" value="https://aicrix.com" href="https://aicrix.com" />
                     <InfoRow label="Email" value="support@aicrix.com" href="mailto:support@aicrix.com" />
-                    <InfoRow label="Phone" value="+91 95059 62262" href="tel:+919505962262" />
+                    <InfoRow label="Phone" value="+91 63615 62262" href="tel:+916361562262" />
                 </div>
             </Section>
         </PageLayout>

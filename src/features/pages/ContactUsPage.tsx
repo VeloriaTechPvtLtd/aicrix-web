@@ -27,7 +27,7 @@ export const ContactUsPage = () => {
                         <Phone className="w-5 h-5" />
                     </div>
                     <h2 className="font-semibold text-sm mb-1" style={{ color: 'var(--text)' }}>Phone</h2>
-                    <a href="tel:+919505962262" className="text-sm transition-colors">+91 95059 62262</a>
+                    <a href="tel:+916361562262" className="text-sm transition-colors">+91 63615 62262</a>
                 </div>
 
                 <div className="p-4 sm:p-5 rounded-2xl page-card transition-all duration-300 group">
@@ -93,7 +93,7 @@ export const ContactUsPage = () => {
                     <InfoRow label="Registered Address" value="12-132, Main Road, Pedda Devaram Padu, Ammanabrolu, Ongole Mandal, Prakasham, 523180, Andhra Pradesh, India" />
                     <InfoRow label="Country" value="India" />
                     <InfoRow label="Email" value="support@aicrix.com" href="mailto:support@aicrix.com" />
-                    <InfoRow label="Phone" value="+91 95059 62262" href="tel:+919505962262" />
+                    <InfoRow label="Phone" value="+91 63615 62262" href="tel:+916361562262" />
                 </div>
             </Section>
 

@@ -33,13 +33,14 @@ module.exports = {
   generateIndexSitemap: false,
   changefreq: "weekly",
   priority: 0.7,
-  outDir: "public",
+  outDir: "out",
   exclude: ["/robots.txt"],
   additionalPaths: async () => {
     const staticPaths = [
       { loc: "/", changefreq: "weekly", priority: 1 },
       { loc: "/about-us", changefreq: "monthly", priority: 0.8 },
       { loc: "/contact-us", changefreq: "monthly", priority: 0.8 },
+      { loc: "/data-deletion", changefreq: "monthly", priority: 0.6 },
       { loc: "/privacy-policy", changefreq: "monthly", priority: 0.6 },
       { loc: "/terms-and-conditions", changefreq: "monthly", priority: 0.6 },
       { loc: "/predictions", changefreq: "monthly", priority: 0.8 },

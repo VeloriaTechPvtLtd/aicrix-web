@@ -1,164 +1,155 @@
-import { useEffect, useRef } from 'react';
-import { Coins, Sprout, CloudSun, Zap, Target, Trophy } from 'lucide-react';
+import { MapPin, Brain, Target, TrendingUp, CloudSun } from 'lucide-react';
 
-const TREND_DATA = [
-  { win: true, val: 80 },
-  { win: false, val: 55 },
-  { win: true, val: 90 },
-  { win: true, val: 70 },
-  { win: true, val: 85 },
-];
+const STRENGTH_METRICS = [
+  { label: 'Batting Depth', indPct: 88, ausPct: 84 },
+  { label: 'Bowling Attack', indPct: 92, ausPct: 95 },
+  { label: 'Fielding', indPct: 85, ausPct: 91 },
+  { label: 'Form', indPct: 100, ausPct: 92 },
+] as const;
 
 export const AnalysisSection = () => {
-  const trendBarsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!trendBarsRef.current) return;
-    trendBarsRef.current.innerHTML = '';
-    TREND_DATA.forEach((d) => {
-      const bar = document.createElement('div');
-      bar.className = 'trend-bar';
-      bar.style.height = d.val + '%';
-      bar.style.flex = '1';
-      bar.style.borderRadius = '3px 3px 0 0';
-      bar.style.background = d.win
-        ? 'linear-gradient(to top, var(--accent), rgba(0,229,160,0.5))'
-        : 'linear-gradient(to top, var(--red), rgba(255,77,109,0.5))';
-      bar.title = d.win ? 'IND won' : 'AUS won';
-      trendBarsRef.current?.appendChild(bar);
-    });
-  }, []);
-
   return (
-    <section id="analysis" className="landing-section analysis-section" style={{ background: 'var(--bg2)' }}>
-      <div className="analysis-inner">
-        <div className="section-tag reveal">Sample Analysis</div>
-        <h2 className="section-title reveal">See the AI in Action</h2>
-        <p className="section-sub reveal">Real match data. This is exactly what you get inside AICRIX.</p>
-        <div className="analysis-wrapper">
-          <div className="analysis-card reveal">
-            <div className="analysis-header">
-              <div>
-                <div className="analysis-teams"><span className="team-code">IND</span> India vs Australia <span className="team-code">AUS</span></div>
-                <div className="analysis-match-meta">ICC T20 WC · Semi-Final · MCG</div>
-              </div>
-              <span className="analysis-confidence-badge">AI CONFIDENCE 88%</span>
+    <section
+      id="analysis"
+      className="landing-section analysis-section"
+      aria-labelledby="analysis-heading"
+    >
+      <div style={{ maxWidth: 1300, margin: '0 auto' }}>
+        {/* Section Header */}
+        <div className="reveal" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <div className="section-tag" style={{ justifyContent: 'center' }}>Match Intelligence</div>
+          <h2 className="section-title" id="analysis-heading">
+            Team &amp; Venue{' '}
+            <span style={{ color: 'var(--accent)' }}>Intelligence</span>
+          </h2>
+          <p className="section-sub" style={{ margin: '0 auto' }}>
+            Comparative squad signals, venue conditions, and model-driven
+            context—built for the fixture, not generic stats.
+          </p>
+        </div>
+
+        {/* Fixture meta strip */}
+        <div className="ai-meta-strip reveal">
+          <span className="ai-fixture-pill">Fixture</span>
+          <span className="ai-fixture-format">T20I</span>
+          <span className="ai-fixture-venue">
+            <MapPin size={12} aria-hidden />
+            MCG · Melbourne
+          </span>
+          <span className="ai-fixture-badge">
+            <span className="ai-dot" aria-hidden />
+            Sample Report
+          </span>
+        </div>
+
+        {/* Win probability card */}
+        <div className="feat-card ai-matchup-card reveal">
+          <div className="ai-team-block ai-team-ind">
+            <span className="ai-team-code">IND</span>
+            <span className="ai-team-pct">52.1%</span>
+            <span className="ai-team-label">Win Probability</span>
+          </div>
+
+          <div className="ai-prob-center">
+            <div className="ai-prob-bar">
+              <div className="ai-prob-seg ind" style={{ flex: '52.1' }} />
+              <div className="ai-prob-seg aus" style={{ flex: '47.9' }} />
             </div>
-            <div className="analysis-body">
-              <div className="prob-duel">
-                <div className="prob-side">
-                  <div className="prob-big win">65%</div>
-                  <div className="prob-country"><span className="team-code">IND</span> INDIA WINS</div>
-                </div>
-                <div className="prob-vs">vs</div>
-                <div className="prob-side">
-                  <div className="prob-big lose">35%</div>
-                  <div className="prob-country"><span className="team-code">AUS</span> AUSTRALIA WINS</div>
-                </div>
-              </div>
-              <div className="stat-rows">
-                <div className="stat-row">
-                  <span className="stat-row-icon"><Coins className="w-4 h-4" /></span>
-                  <span className="stat-row-label">Toss Winner Advantage</span>
-                  <span className="stat-row-val pos">Batting first: +8%</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-row-icon"><Sprout className="w-4 h-4" /></span>
-                  <span className="stat-row-label">Pitch Behaviour</span>
-                  <span className="stat-row-val neu">Flat · High Scoring</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-row-icon"><CloudSun className="w-4 h-4" /></span>
-                  <span className="stat-row-label">Weather Impact</span>
-                  <span className="stat-row-val neu">Dew expected · Ov.15+</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-row-icon"><Zap className="w-4 h-4" /></span>
-                  <span className="stat-row-label">Top Batting Threat</span>
-                  <span className="stat-row-val pos">Kohli · Form: 9.2/10</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-row-icon"><Target className="w-4 h-4" /></span>
-                  <span className="stat-row-label">Bowling Edge</span>
-                  <span className="stat-row-val pos">India · Bumrah vs top-order</span>
-                </div>
-              </div>
-              <div className="trend-chart">
-                <div className="trend-title">IND HEAD-TO-HEAD LAST 5 MATCHES vs AUS (T20)</div>
-                <div className="trend-bars" ref={trendBarsRef} />
-              </div>
+            <div className="ai-prob-legend">
+              <span>IND</span>
+              <span className="ai-prob-legend-label">
+                <Brain size={11} aria-hidden />
+                Model Probability
+              </span>
+              <span>AUS</span>
             </div>
           </div>
 
-          <div className="side-stats reveal">
-            <div className="stat-block">
-              <div className="stat-block-header">
-                <span className="stat-block-title">Key Player Impact Index</span>
-                <span className="stat-block-badge badge-green">LIVE</span>
-              </div>
-              {[
-                { name: 'Virat Kohli', role: 'Batter · RHB', impact: '↑ +18.4%', color: 'var(--accent)', icon: Trophy },
-                { name: 'J. Bumrah', role: 'Bowler · RFM', impact: '↑ +14.2%', color: 'var(--accent)', icon: Zap },
-                { name: 'D. Warner', role: 'Batter · LHB', impact: '↓ −6.1%', color: 'var(--red)', icon: Trophy },
-                { name: 'M. Starc', role: 'Bowler · LFM', impact: '→ +3.8%', color: 'var(--accent2)', icon: Target },
-              ].map((p, i) => {
-                const Icon = p.icon;
-                return (
-                <div key={i} className="player-row">
-                  <div className="player-avatar"><Icon className="w-5 h-5" /></div>
-                  <div className="player-info">
-                    <div className="player-name">{p.name}</div>
-                    <div className="player-role">{p.role}</div>
+          <div className="ai-team-block ai-team-aus">
+            <span className="ai-team-code">AUS</span>
+            <span className="ai-team-pct">47.9%</span>
+            <span className="ai-team-label">Win Probability</span>
+          </div>
+        </div>
+
+        {/* Intelligence grid — 3 cards */}
+        <div className="analysis-intel-grid">
+          {/* Venue Dynamics */}
+          <div className="feat-card reveal">
+            <div className="feat-icon" style={{ background: 'rgba(99,102,241,0.1)', borderColor: 'rgba(99,102,241,0.2)', color: '#818cf8' }}>
+              <Target size={20} aria-hidden />
+            </div>
+            <div className="feat-title">Venue Dynamics</div>
+            <div className="feat-desc" style={{ marginBottom: '1rem' }}>MCG · Melbourne</div>
+            <ul className="ai-stat-list">
+              <li className="ai-stat-item">
+                <span className="ai-stat-label">Avg 1st Innings</span>
+                <span className="ai-stat-value" style={{ color: 'var(--accent)' }}>175+</span>
+              </li>
+              <li className="ai-stat-item">
+                <span className="ai-stat-label">Bat 1st Win Rate</span>
+                <span className="ai-stat-value">68%</span>
+              </li>
+              <li className="ai-stat-item">
+                <span className="ai-stat-label">Pitch Pace</span>
+                <span className="ai-stat-value">Fast / True Bounce</span>
+              </li>
+              <li className="ai-stat-item" style={{ borderBottom: 'none' }}>
+                <span className="ai-stat-label">Weather</span>
+                <span className="ai-stat-value" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  <CloudSun size={12} aria-hidden />
+                  Clear · 62% Humidity
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Squad Matchup */}
+          <div className="feat-card reveal">
+            <div className="feat-icon">
+              <TrendingUp size={20} aria-hidden />
+            </div>
+            <div className="feat-title">Squad Matchup</div>
+            <div className="feat-desc" style={{ marginBottom: '1rem' }}>Comparative strength</div>
+            <div className="ai-squad-list">
+              {STRENGTH_METRICS.map((m) => (
+                <div className="ai-squad-item" key={m.label}>
+                  <div className="ai-squad-row">
+                    <span className="ai-squad-val ind">{m.indPct}</span>
+                    <span className="ai-squad-label">{m.label}</span>
+                    <span className="ai-squad-val aus">{m.ausPct}</span>
                   </div>
-                  <div className="player-impact" style={{ color: p.color }}>{p.impact}</div>
+                  <div className="ai-squad-bar">
+                    <div className="ai-squad-fill ind" style={{ width: `${m.indPct / 2}%` }} />
+                    <div className="ai-squad-fill aus" style={{ width: `${m.ausPct / 2}%` }} />
+                  </div>
                 </div>
-              );
-              })}
+              ))}
             </div>
+          </div>
 
-            <div className="stat-block">
-              <div className="stat-block-header">
-                <span className="stat-block-title">Team Strength Comparison</span>
-                <span className="stat-block-badge badge-blue">AI RATED</span>
-              </div>
-              <div className="team-strength-bars">
-                {[
-                  { label: 'Batting Depth', val: 'IND 8.4 vs AUS 7.6', w: 70, color: 'var(--accent)' },
-                  { label: 'Bowling Attack', val: 'IND 9.1 vs AUS 8.2', w: 77, color: 'var(--accent)' },
-                  { label: 'Fielding Quality', val: 'IND 7.8 vs AUS 8.5', w: 55, color: 'var(--accent2)' },
-                  { label: 'Squad Availability', val: 'IND 9.0 vs AUS 7.2', w: 80, color: 'var(--accent)' },
-                ].map((r, i) => (
-                  <div key={i}>
-                    <div className="team-strength-row">
-                      <span className="team-strength-label">{r.label}</span>
-                      <span className="team-strength-val" style={{ color: r.color }}>{r.val}</span>
-                    </div>
-                    <div className="team-strength-bar-wrap">
-                      <div className="team-strength-bar-fill" style={{ width: r.w + '%' }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
+          {/* AI Verdict */}
+          <div className="feat-card reveal">
+            <div className="feat-icon" style={{ background: 'rgba(251,191,36,0.08)', borderColor: 'rgba(251,191,36,0.18)', color: '#fbbf24' }}>
+              <Brain size={20} aria-hidden />
             </div>
-
-            <div className="stat-block">
-              <div className="stat-block-header">
-                <span className="stat-block-title">Venue Intelligence</span>
-                <span className="stat-block-badge badge-purple">MCG</span>
-              </div>
-              <div className="venue-grid">
-                {[
-                  { val: '68%', lbl: 'BATTING FIRST WIN', color: 'var(--accent)' },
-                  { val: '175+', lbl: 'AVG FIRST INNINGS', color: 'var(--accent2)' },
-                  { val: 'DEW', lbl: 'EVENING FACTOR', color: 'var(--accent3)' },
-                  { val: 'FAST', lbl: 'OUTFIELD PACE', color: 'var(--accent)' },
-                ].map((b, i) => (
-                  <div key={i} className="venue-stat-card">
-                    <div className="venue-stat-value" style={{ color: b.color }}>{b.val}</div>
-                    <div className="venue-stat-label">{b.lbl}</div>
-                  </div>
-                ))}
-              </div>
+            <div className="feat-title">AI Verdict</div>
+            <div className="feat-desc" style={{ marginBottom: '1rem' }}>Model output</div>
+            <div className="ai-verdict-edge">
+              <span className="ai-verdict-edge-label">Edge</span>
+              <span className="ai-verdict-edge-val">+4.2%</span>
+              <span className="ai-verdict-edge-team">IND</span>
+            </div>
+            <p className="ai-verdict-text">
+              Models favor <strong>IND</strong> slightly due to superior batting
+              depth against true bounce conditions at the MCG.
+            </p>
+            <div className="ai-verdict-key-factor">
+              <span className="ai-verdict-kf-label">Key Factor</span>
+              <p className="ai-verdict-kf-text">
+                Early swing for AUS seamers could disrupt the top order, but
+                IND&apos;s middle order stability delivers the decisive edge.
+              </p>
             </div>
           </div>
         </div>

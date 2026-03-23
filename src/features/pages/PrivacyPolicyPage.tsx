@@ -170,7 +170,7 @@ export const PrivacyPolicyPage = () => {
 
             <Section title="9. Delete Your Personal Data">
                 <p>You have the right to delete or request that we assist in deleting the Personal Data that we have collected about you.</p>
-                <p className="mt-2">Our Service may give you the ability to delete certain information about you from within the Service. You may update, amend, or delete your information at any time by signing in to your Account, if you have one, and visiting the account settings section that allows you to manage your personal information. You may also contact us to request access to, correct, or delete any personal information that you have provided to us.</p>
+                <p className="mt-2">You may contact us to request access to, correct, or delete any personal information that you have provided to us, including requesting the deletion of your account. To submit a data deletion request, please email our support team at support@aicrix.com.</p>
                 <p className="mt-2">Please note, however, that we may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
             </Section>
 
@@ -220,7 +220,7 @@ export const PrivacyPolicyPage = () => {
                 <div className="p-4 rounded-xl page-card mt-2">
                     <InfoRow label="Company" value="VELORIA TECH (OPC) PRIVATE LIMITED" />
                     <InfoRow label="Email" value="support@aicrix.com" href="mailto:support@aicrix.com?subject=Privacy Inquiry" />
-                    <InfoRow label="Phone" value="+91 95059 62262" href="tel:+919505962262" />
+                    <InfoRow label="Phone" value="+91 63615 62262" href="tel:+916361562262" />
                     <InfoRow label="Website" value="https://aicrix.com/contact-us" href="/contact-us" />
                     <InfoRow label="Mailing Address" value="12-132, Main Road, Pedda Devaram Padu, Ammanabrolu, Ongole Mandal, Prakasham, 523180, Andhra Pradesh, India" />
                 </div>

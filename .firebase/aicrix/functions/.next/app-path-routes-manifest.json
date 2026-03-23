@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/robots.txt/route": "/robots.txt",
+  "/[...notFound]/page": "/[...notFound]",
+  "/accuracy-reports/page": "/accuracy-reports",
+  "/404/page": "/404",
+  "/contact-us/page": "/contact-us",
+  "/player-analysis/page": "/player-analysis",
+  "/how-it-works/page": "/how-it-works",
+  "/privacy-policy/page": "/privacy-policy",
+  "/data-deletion/page": "/data-deletion",
+  "/predictions/page": "/predictions",
+  "/blog/page": "/blog",
+  "/terms-and-conditions/page": "/terms-and-conditions",
+  "/page": "/",
+  "/venue-reports/page": "/venue-reports",
+  "/about-us/page": "/about-us",
+  "/predictions/[slug]/page": "/predictions/[slug]",
+  "/blog/[slug]/page": "/blog/[slug]"
+}

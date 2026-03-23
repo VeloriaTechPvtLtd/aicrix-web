@@ -6,7 +6,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aicrix.com";
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return [];
+  return [
+    { slug: "placeholder-prediction-1" }
+  ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

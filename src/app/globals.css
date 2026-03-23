@@ -63,6 +63,15 @@
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
+  /* max-width only on img — height:auto can collapse SVG <img> or break intrinsic sizing */
+  img {
+    max-width: 100%;
+  }
+  video,
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Landing page animations */

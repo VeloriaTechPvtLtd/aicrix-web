@@ -25,6 +25,7 @@ export const Footer = () => {
         <div className="footer-col">
           <h3>Legal</h3>
           <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/data-deletion">Data Deletion</Link>
           <Link href="/terms-and-conditions">Terms of Use</Link>
           <Link href="/contact-us">Support</Link>
         </div>

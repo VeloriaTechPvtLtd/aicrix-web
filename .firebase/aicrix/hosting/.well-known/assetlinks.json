@@ -1,0 +1,17 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.veloria.aicrix",
+      "sha256_cert_fingerprints": [
+        "BE:31:F4:52:C6:F8:CA:73:59:EF:FE:AE:40:AA:13:DF:04:8B:64:77:1B:63:F3:FD:FB:FF:8E:02:4C:DF:DA:FE",
+        "E9:00:20:F3:67:66:26:01:42:76:CC:5B:3B:89:26:05:89:83:01:80:2E:B4:FB:2B:F4:84:74:B5:90:49:28:7A",
+        "03:80:98:53:66:1B:B9:16:61:BC:7F:69:29:0B:01:57:32:93:00:49:48:2C:F7:69:E4:65:FC:1E:7A:F3:F9:A9"
+      ]
+    }
+  }
+]
