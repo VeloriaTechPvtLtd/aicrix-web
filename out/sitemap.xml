@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://aicrix.com/how-it-works</loc><lastmod>2026-03-23T19:16:21.511Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/player-analysis</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>weekly</changefreq><priority>1</priority></url>
-<url><loc>https://aicrix.com/about-us</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/predictions</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/blog</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://aicrix.com/contact-us</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/venue-reports</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/terms-and-conditions</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://aicrix.com/privacy-policy</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://aicrix.com/accuracy-reports</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aicrix.com/predictions/placeholder-prediction-1</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://aicrix.com/data-deletion</loc><lastmod>2026-04-09T20:17:20.050Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://aicrix.com/how-it-works</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/player-analysis</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/predictions/placeholder-prediction-1</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://aicrix.com</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>weekly</changefreq><priority>1</priority></url>
+<url><loc>https://aicrix.com/accuracy-reports</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/privacy-policy</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://aicrix.com/about-us</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/predictions</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/terms-and-conditions</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://aicrix.com/venue-reports</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/contact-us</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://aicrix.com/blog</loc><lastmod>2026-04-09T20:17:20.051Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://aicrix.com/blog/how-ai-predicts-cricket</loc><lastmod>2026-03-03T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://aicrix.com/blog/match-preview-what-you-get</loc><lastmod>2026-03-07T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://aicrix.com/blog/understanding-venue-reports</loc><lastmod>2026-03-05T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://aicrix.com/blog/welcome-to-aicrix-blog</loc><lastmod>2026-03-01T00:00:00.000Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://aicrix.com/data-deletion</loc><lastmod>2026-03-23T19:16:21.512Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

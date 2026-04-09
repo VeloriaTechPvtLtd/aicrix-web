@@ -1,10 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: process.env.NODE_ENV === "production" ? "export" : undefined,
-  /** Required for `next/image` with `output: "export"` (Firebase / static hosting). */
+  /**
+   * For Vercel, we use the default (dynamic) build to enable full platform features.
+   * For other production environments (like Firebase), we maintain the 'export' output.
+   */
+  output:
+    process.env.VERCEL || process.env.NODE_ENV !== "production"
+      ? undefined
+      : "export",
+  /** Required for `next/image` only with `output: "export"`. */
   images: {
-    unoptimized: true,
+    unoptimized: process.env.VERCEL ? false : true,
   },
 };
 
