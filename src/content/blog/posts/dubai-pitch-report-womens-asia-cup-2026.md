@@ -1,6 +1,6 @@
 ---
-title: Dubai Pitch Report, Women’s Asia Cup 2026: Dew, Toss & Par Score
-excerpt: Dubai pitch report, Women’s Asia Cup 2026: dew after 8 PM IST, toss lean to chase, spin vs pace, and women’s T20 par bands — not the men’s 140 average.
+title: "Dubai Pitch Report, Women’s Asia Cup 2026: Dew, Toss & Par Score"
+excerpt: "Dubai pitch report, Women’s Asia Cup 2026: dew after 8 PM IST, toss lean to chase, spin vs pace, and women’s T20 par bands — not the men’s 140 average."
 date: 2026-08-27
 image: /og-image.png
 author: AICRIX Team

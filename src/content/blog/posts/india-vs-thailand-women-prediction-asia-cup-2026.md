@@ -1,6 +1,6 @@
 ---
-title: IND-W vs THA-W Prediction (30 Aug): Win %, Dubai Pitch & Fantasy XI
-excerpt: IND-W vs THA-W (30 Aug, Dubai, 8 PM IST): India win % with bands, Dubai dew/spin pitch, and a research XI that rebuilds after toss. Track live in AiCrix.
+title: "IND-W vs THA-W Prediction (30 Aug): Win %, Dubai Pitch & Fantasy XI"
+excerpt: "IND-W vs THA-W (30 Aug, Dubai, 8 PM IST): India win % with bands, Dubai dew/spin pitch, and a research XI that rebuilds after toss. Track live in AiCrix."
 date: 2026-08-27
 image: /og-image.png
 author: AICRIX Team

@@ -35,11 +35,25 @@ function loadAll(): BlogPost[] {
     } catch {
       continue;
     }
-    const { data, content } = matter(raw);
+    let data: Record<string, unknown>;
+    let content: string;
+    try {
+      const parsed = matter(raw);
+      data = parsed.data as Record<string, unknown>;
+      content = parsed.content;
+    } catch (err) {
+      console.error(`[blog] Failed to parse frontmatter in ${name}:`, err);
+      continue;
+    }
     const title = (data.title as string) ?? slug;
     const excerpt = (data.excerpt as string) ?? "";
+    const dateRaw = data.date;
     const date =
-      (data.date as string) ?? new Date().toISOString().slice(0, 10);
+      typeof dateRaw === "string"
+        ? dateRaw
+        : dateRaw instanceof Date
+          ? dateRaw.toISOString().slice(0, 10)
+          : new Date().toISOString().slice(0, 10);
     const image = data.image as string | undefined;
     const author = data.author as string | undefined;
     posts.push({
