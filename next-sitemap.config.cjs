@@ -17,7 +17,14 @@ function getBlogSlugsWithDates() {
         try {
           const raw = fs.readFileSync(filePath, "utf8");
           const { data } = matter(raw);
-          if (data.date) date = data.date;
+          if (data.date) {
+            date =
+              typeof data.date === "string"
+                ? data.date
+                : data.date instanceof Date
+                  ? data.date.toISOString().split("T")[0]
+                  : date;
+          }
         } catch (_) {}
         return { slug, lastmod: date };
       });
@@ -33,7 +40,9 @@ module.exports = {
   generateIndexSitemap: false,
   changefreq: "weekly",
   priority: 0.7,
-  outDir: "out",
+  // Vercel builds without `output: "export"` (no `out/`). Static-export
+  // hosts still write into `out/`; otherwise sitemap lands in `public/`.
+  outDir: process.env.VERCEL ? "public" : "out",
   exclude: ["/robots.txt"],
   additionalPaths: async () => {
     const staticPaths = [

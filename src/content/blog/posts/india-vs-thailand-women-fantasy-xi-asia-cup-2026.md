@@ -1,6 +1,6 @@
 ---
-title: India vs Thailand Women Fantasy XI (30 Aug): Dubai Pitch Picks, Not a Lock
-excerpt: India vs Thailand Women research XI, 30 Aug in Dubai: pitch picks, roles, toss rebuild. Not a lock, not a contest ticket. First cut, rebuild after toss.
+title: "India vs Thailand Women Fantasy XI (30 Aug): Dubai Pitch Picks, Not a Lock"
+excerpt: "India vs Thailand Women research XI, 30 Aug in Dubai: pitch picks, roles, toss rebuild. Not a lock, not a contest ticket. First cut, rebuild after toss."
 date: 2026-08-27
 image: /og-image.png
 author: AICRIX Team
