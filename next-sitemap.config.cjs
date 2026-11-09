@@ -36,14 +36,15 @@ function getBlogSlugsWithDates() {
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: SITE_URL,
-  generateRobotsTxt: true,
+  // Next.js src/app/robots.ts owns /robots.txt for both deployment modes.
+  generateRobotsTxt: false,
   generateIndexSitemap: false,
   changefreq: "weekly",
   priority: 0.7,
   // Vercel builds without `output: "export"` (no `out/`). Static-export
   // hosts still write into `out/`; otherwise sitemap lands in `public/`.
   outDir: process.env.VERCEL ? "public" : "out",
-  exclude: ["/robots.txt"],
+  exclude: ["/robots.txt", "/404", "/404/*", "/500", "/_not-found", "/_error"],
   additionalPaths: async () => {
     const staticPaths = [
       { loc: "/", changefreq: "weekly", priority: 1 },
@@ -58,6 +59,9 @@ module.exports = {
       { loc: "/how-it-works", changefreq: "monthly", priority: 0.8 },
       { loc: "/accuracy-reports", changefreq: "monthly", priority: 0.8 },
       { loc: "/blog", changefreq: "weekly", priority: 0.7 },
+      { loc: "/insights", changefreq: "monthly", priority: 0.8 },
+      { loc: "/download", changefreq: "monthly", priority: 0.8 },
+      ...["match-prediction", "player-prediction", "fantasy-xi", "playing-xi", "team-analysis", "pitch-and-toss"].map(slug => ({ loc: `/guides/${slug}`, changefreq: "monthly", priority: 0.7 })),
     ];
     const blogPosts = getBlogSlugsWithDates().map(({ slug, lastmod }) => ({
       loc: `/blog/${slug}`,

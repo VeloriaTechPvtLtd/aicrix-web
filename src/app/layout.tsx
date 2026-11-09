@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "@/features/reference/reference.css";
 
 /**
  * Prevent Next.js error overlay from showing "[object Event]" when a promise rejects
@@ -37,17 +37,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aicrix.com";
 const GOOGLE_SITE_VERIFICATION =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-sans",
-  display: "swap",
-  adjustFontFallback: true,
-});
-
 const defaultTitle = "AICRIX – AI-Powered Cricket Match Predictions";
 const defaultDescription =
-  "Get AI-powered cricket match predictions with 89% accuracy. Real-time win probability, player analytics, pitch intelligence, and live match momentum. Download the AICRIX app.";
+  "Explore AI-powered cricket match predictions, win probability, player analytics, pitch intelligence, and live match momentum. Download the AICRIX app.";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -104,7 +96,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{

@@ -14,12 +14,14 @@ export const metadata: Metadata = {
   keywords: "cricket blog, cricket analytics, AI predictions blog, fantasy cricket tips",
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
+    title: "Blog | AICRIX",
     description: "AICRIX blog: cricket analytics insights, AI updates, and tips for fantasy and analysis.",
     url: `${SITE_URL}/blog`,
     siteName: "AICRIX",
     images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
   },
   twitter: {
+    title: "Blog | AICRIX",
     card: "summary_large_image",
     description: "AICRIX blog: cricket analytics insights, AI updates, fantasy tips.",
   },

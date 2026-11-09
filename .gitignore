@@ -32,3 +32,6 @@ public/robots.txt
 out/
 build/
 .vercel
+
+# TypeScript incremental build cache
+*.tsbuildinfo
