@@ -8,7 +8,8 @@
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:export": "node --test tests/export.test.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

@@ -5,7 +5,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aicrix.com";
 
 const defaultTitle = "AICRIX – AI-Powered Cricket Match Predictions";
 const defaultDescription =
-  "Get AI-powered cricket match predictions with 89% accuracy. Real-time win probability, player analytics, pitch intelligence, and live match momentum. Download the AICRIX app.";
+  "Explore AI-powered cricket match predictions, win probability, player analytics, pitch intelligence, and live match momentum. Download the AICRIX app.";
 
 /** Force static generation at build time — fast load, great for SEO. */
 export const dynamic = "force-static";
@@ -38,7 +38,7 @@ const webPageJsonLd = {
   url: SITE_URL,
   name: "AICRIX – AI-Powered Cricket Match Predictions",
   description:
-    "Get AI-powered cricket match predictions with 89% accuracy. Real-time win probability, player analytics, pitch intelligence, and live match momentum.",
+    "Explore AI-powered cricket match predictions, win probability, player analytics, pitch intelligence, and live match momentum.",
   isPartOf: { "@id": `${SITE_URL}/#website` },
 };
 

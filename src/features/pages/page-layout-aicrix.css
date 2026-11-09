@@ -6,12 +6,12 @@
   --surface: #101828;
   --surface2: #162035;
   --border: rgba(255, 255, 255, 0.07);
-  --accent: #00e5a0;
+  --accent: #86ccff;
   --accent2: #0af;
   --accent3: #7c6aff;
   --red: #ff4d6d;
   --text: #e8edf5;
-  --muted: #7a8aaa;
+  --muted: #afc0d5;
   --faint: rgba(255, 255, 255, 0.04);
 
   min-height: 100vh;
@@ -122,7 +122,7 @@
   transform: translateX(-50%);
   width: 600px;
   height: 400px;
-  background: radial-gradient(circle, rgba(0, 229, 160, 0.06) 0%, rgba(0, 170, 255, 0.03) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(134, 204, 255, 0.06) 0%, rgba(0, 170, 255, 0.03) 50%, transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
@@ -323,12 +323,12 @@
 }
 
 .page-layout-aicrix .page-card:hover {
-  border-color: rgba(0, 229, 160, 0.2);
+  border-color: rgba(134, 204, 255, 0.2);
 }
 
 .page-layout-aicrix .page-card-accent {
-  background: linear-gradient(135deg, rgba(0, 229, 160, 0.06), rgba(0, 170, 255, 0.02));
-  border: 1px solid rgba(0, 229, 160, 0.15);
+  background: linear-gradient(135deg, rgba(134, 204, 255, 0.06), rgba(0, 170, 255, 0.02));
+  border: 1px solid rgba(134, 204, 255, 0.15);
 }
 
 .page-layout-aicrix .page-icon-wrap {
@@ -339,8 +339,8 @@
 }
 
 .page-layout-aicrix .page-icon-wrap-accent {
-  background: linear-gradient(135deg, rgba(0, 229, 160, 0.15), rgba(0, 170, 255, 0.08));
-  border: 1px solid rgba(0, 229, 160, 0.25);
+  background: linear-gradient(135deg, rgba(134, 204, 255, 0.15), rgba(0, 170, 255, 0.08));
+  border: 1px solid rgba(134, 204, 255, 0.25);
   color: var(--accent);
 }
 
@@ -350,7 +350,7 @@
   font-weight: 600;
   border-radius: 100px;
   transition: opacity 0.2s, transform 0.2s;
-  box-shadow: 0 4px 20px rgba(0, 229, 160, 0.25);
+  box-shadow: 0 4px 20px rgba(134, 204, 255, 0.25);
 }
 
 .page-layout-aicrix .page-btn-primary:hover {
@@ -370,8 +370,8 @@
 
 .page-layout-aicrix .page-input:focus {
   outline: 2px solid transparent;
-  border-color: rgba(0, 229, 160, 0.4);
-  box-shadow: 0 0 0 1px rgba(0, 229, 160, 0.15);
+  border-color: rgba(134, 204, 255, 0.4);
+  box-shadow: 0 0 0 1px rgba(134, 204, 255, 0.15);
 }
 
 /* Warning / notice boxes – keep amber for semantics, or use accent3 */

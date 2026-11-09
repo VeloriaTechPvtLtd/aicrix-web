@@ -29,6 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt,
     alternates: { canonical: postUrl },
     openGraph: {
+      title: post.title,
       type: "article",
       description: post.excerpt,
       url: postUrl,
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(post.author && { authors: [post.author] }),
     },
     twitter: {
+      title: post.title,
       card: "summary_large_image",
       description: post.excerpt,
       images: [imageUrl],
