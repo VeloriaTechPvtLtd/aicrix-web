@@ -8,7 +8,7 @@ status: draft
 
 A cricket scorecard gives you runs, balls, wickets and catches. To calculate fantasy points, convert the relevant contributions, check which adjustments apply, then apply any player multiplier. Keeping those steps separate makes the total easier to check.
 
-### Start with the correct scoring format
+## Start with the correct scoring format
 
 The [official Dream11 T20 reference](https://www.dream11.com/features/how-to-play) supplies these values used in the examples:
 
@@ -26,7 +26,7 @@ The [official Dream11 T20 reference](https://www.dream11.com/features/how-to-pla
 
 This is a selected reference, not the complete matrix. Check the format and mode before applying it. Dream11’s second-innings mode excludes announcement points and counts contributions from that innings only.
 
-### Example 1 A century
+## Example 1 A century
 
 Imagine a batter who starts, makes 100 from 60 balls, hits eight fours and four sixes, and has no bowling or fielding contributions.
 
@@ -46,7 +46,7 @@ The milestone entry is 16, not 4 + 8 + 12 + 16. Adding all four batting mileston
 
 If selected as captain, the result is 180 × 2 = **360 points**. As vice-captain, it is 180 × 1.5 = **270 points**. These are alternative roles, not two multipliers to apply together.
 
-### Example 2 A three wicket spell
+## Example 2 A three wicket spell
 
 Imagine a starting player with figures of 4–0–24–3, 12 qualifying dot deliveries and one catch. Two wickets are bowled and the third is caught. The player does not bat.
 
@@ -70,7 +70,7 @@ The total is **90 + 16 + 12 + 4 + 2 + 8 + 4 = 136 points**.
 
 The assumed figures contain no maiden. To reproduce the total, a reader needs the dismissal types and dot count alongside overs, wickets and runs conceded. A basic bowling summary alone does not contain all those inputs.
 
-### Example 3 A nine ball cameo
+## Example 3 A nine ball cameo
 
 A starting batter scores 18 from nine balls, including two fours and one six, with no other contributions.
 
@@ -78,7 +78,7 @@ The calculation is **18 + (2 × 4) + (1 × 6) + 4 = 36 points**.
 
 The arithmetic strike rate is 200, but the innings contains only nine balls. The strike-rate adjustment stays at zero because the eligibility threshold has not been reached. Calculating the rate first and checking the minimum second avoids inserting an extra six points by mistake.
 
-### Check a total one category at a time
+## Check a total one category at a time
 
 Record the format, mode, player’s listed role and exact scorecard inputs. Keep runs separate from boundary counts, and wickets separate from dismissal types. Label each adjustment so another reader can trace it to an event or condition.
 

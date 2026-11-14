@@ -8,7 +8,7 @@ status: draft
 
 That timing matters. A headline saying a ground was rated “unsatisfactory” may describe a specific Test months earlier. Before using it to understand another fixture, identify the match, date and any subsequent appeal.
 
-### The four pitch labels
+## The four pitch labels
 
 The ICC’s revised pitch scale uses **very good, satisfactory, unsatisfactory and unfit**. Its January 2025 explanation records the change from the older six-category system. [ICC explanation of the revised scale](https://www.icc-cricket.com/news/icc-pitch-ratings-for-border-gavaskar-series-released).
 
@@ -18,7 +18,7 @@ For example, all four opening pitches in the 2024–25 Border-Gavaskar Test seri
 
 The pitch and outfield are assessed separately. A ground’s outfield concerns a different playing area from the central pitch. Do not silently copy a pitch label into the outfield column, or assume that a satisfactory rating for one establishes the other’s condition.
 
-### Demerit points belong to the venue
+## Demerit points belong to the venue
 
 The ICC’s 2026 sanction announcements describe the following consequences:
 
@@ -35,7 +35,7 @@ A single one-point announcement therefore does not itself establish a ground ban
 
 Avoid importing sanction thresholds from an earlier version of the framework. A historical report can accurately describe the rules at its publication date without being a reliable statement of the current framework.
 
-### What changed after the King City appeals
+## What changed after the King City appeals
 
 King City in Toronto provides a useful example of why the latest decision matters.
 
@@ -47,13 +47,13 @@ Those are dated outcomes. They should not be rewritten as current lifetime total
 
 The arithmetic is simple, but the version history is essential: one plus three initially made four; removing the first point left three. Summing every old penalty headline would retain a sanction that no longer applied.
 
-### How to read a venue rating record
+## How to read a venue rating record
 
 Use a record that identifies the international match, match date, format and ground. Keep pitch and outfield assessments in different fields. If a decision changes, preserve the original event and record the appeal outcome beside it, rather than treating the appeal as another bad-pitch incident.
 
 Also check the dates covered by the archive. On 12 November 2026, the ICC’s ratings page linked a consolidated file labelled through **30 September 2026**. That label does not establish that a November match had already been rated or included. [ICC ratings archive](https://www.icc-cricket.com/about/cricket/rules-and-regulations/pitch-ratings).
 
-### What this means for match analysis
+## What this means for match analysis
 
 An official rating can provide useful historical context, especially when the decision explains a safety or surface-quality concern. It cannot supply tomorrow’s confirmed strip, player roles, weather or a numeric par score.
 

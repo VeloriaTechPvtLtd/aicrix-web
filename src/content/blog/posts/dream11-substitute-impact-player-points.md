@@ -8,7 +8,7 @@ A player entering a cricket match and a player entering your fantasy team are di
 
 The distinction is especially important for an Impact Player. Being named among possible substitutes, actually being activated, and remaining in a fantasy lineup are three separate facts. One does not prove the other two.
 
-### The scoring categories to check
+## The scoring categories to check
 
 The standard T20 section of Dream11’s official scoring page makes these distinctions, checked on 14 November 2026:
 
@@ -23,7 +23,7 @@ The person who actually replaces an unavailable starter can earn match and start
 
 An ordinary substitute fielder may make a legitimate contribution to the real match without qualifying under a fantasy platform’s scoring categories. Match laws govern what the player can do; the platform defines the fantasy treatment. The two rulebooks should not be substituted for one another.
 
-### Three cases that look similar on screen
+## Three cases that look similar on screen
 
 Imagine three fictional names displayed beside the word “substitute.”
 
@@ -35,7 +35,7 @@ Imagine three fictional names displayed beside the word “substitute.”
 
 These cases use different status evidence, not different opinions about how important the contribution was.
 
-### Why a backup question needs a different answer
+## Why a backup question needs a different answer
 
 A fantasy backup concerns how an entry’s player selection changes. Substitute scoring concerns what an eligible selected player earns from the match. A scoring clause does not establish automatic replacement order, role constraints or transfer of captaincy.
 
@@ -43,13 +43,13 @@ If a player later participates after disappearing from an entry, that creates a 
 
 For a disputed entry, compare its saved player list before and after the replacement. If the original player disappeared from the final entry, adding that player’s eventual match points to the entry does not explain the selection change. First establish which player the app recorded, then resolve the points.
 
-### Captaincy is a separate field
+## Captaincy is a separate field
 
 The standard T20 reference uses 2× for captain and 1.5× for vice-captain. That multiplier information does not tell you which role an automatic replacement inherits. Check the entry’s resulting C and VC labels and the applicable backup help text rather than assuming that “replacement” itself means “new captain.” [Dream11 scoring reference](https://www.dream11.com/features/how-to-play).
 
 Likewise, a real team’s captain and a fantasy captain are different roles. A fielding change does not establish a change to the multiplier in your entry.
 
-### Keep a short evidence trail
+## Keep a short evidence trail
 
 For an unexplained total, retain the fixture and mode, saved entry, player status, replacement record and specific disputed contribution. Note whether the issue is selection, participation eligibility or arithmetic. This prevents three different questions being collapsed into “the points are wrong.”
 

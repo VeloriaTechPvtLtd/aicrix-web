@@ -6,7 +6,7 @@ status: draft
 
 A Powerplay limits how many fielders can stand outside the marked fielding-restriction area. The full-length men’s ODI pattern is **two, four, then five outside** across three phases. A full-length men’s T20I allows **two outside for the first six overs, then five** under the normal fielding limit.
 
-### Full length innings at a glance
+## Full length innings at a glance
 
 The limits apply at the instant of delivery. The area commonly called the 30-yard circle is formed from two 30-yard semicircles joined by straight lines. [ICC men’s ODI clause 28.7](https://images.icc-cricket.com/image/upload/prd/bxkzkcyvfn6tvi70zh0w.pdf); [men’s T20I clause 28.7](https://images.icc-cricket.com/image/upload/prd/bsxcho7ufe2pjban0wjp.pdf).
 
@@ -20,7 +20,7 @@ The limits apply at the instant of delivery. The area commonly called the 30-yar
 
 “Maximum” is important. A captain may place fewer fielders outside; the rule does not force every permitted boundary fielder to be used. A field with one outside during the opening phase is not illegal merely because two are allowed.
 
-### Shortened T20Is do not always have whole over Powerplays
+## Shortened T20Is do not always have whole over Powerplays
 
 The current T20I table uses ball-level lengths. A five-over innings has 1.3 overs of Powerplay; ten overs has 3.0; fifteen has 4.3; and nineteen has 5.4. These are cricket notation, not decimals. [Clause 28.7.6](https://images.icc-cricket.com/image/upload/prd/bsxcho7ufe2pjban0wjp.pdf).
 
@@ -33,17 +33,17 @@ The current T20I table uses ball-level lengths. A five-over innings has 1.3 over
 
 Consider the fifteen-over example. Four completed overs use 24 legal balls. Three more balls make 27, so the restricted phase ends after 4.3. Treating that as four overs would remove three restricted deliveries; treating it as five would add three.
 
-### A shortened ODI remains an ODI
+## A shortened ODI remains an ODI
 
 A twenty-over-per-side ODI uses four overs in phase one, twelve in phase two and four in phase three. It does not switch to the six-over T20I opening Powerplay. A thirty-over ODI uses 6 + 18 + 6. Those allocations come from the ODI reduction table. [Clause 28.7.2.3](https://images.icc-cricket.com/image/upload/prd/bxkzkcyvfn6tvi70zh0w.pdf).
 
 This gives a useful comparison: the same twenty-over innings length can carry different fielding restrictions because the competition format is different. Always read the format label before importing a phase definition into analysis.
 
-### What happens after an interruption
+## What happens after an interruption
 
 Check the revised allocation and the restrictions announced for the restart. Do not restart the opening Powerplay simply because play has resumed. The relevant tables apply to the innings as revised, including cricket already played; changes can take effect partway through an over.
 
-### Reading statistics and field placements
+## Reading statistics and field placements
 
 An analyst’s first-six-overs split and a rules-defined Powerplay are not always the same thing. They coincide in a normal twenty-over T20I, but a shortened match can separate them. Label the actual phase when comparing scoring rates or bowling returns.
 

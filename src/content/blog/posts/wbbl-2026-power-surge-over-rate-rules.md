@@ -8,7 +8,7 @@ WBBL12 can have more than six overs’ worth of Powerplay-style fielding restric
 
 For 2026–27, Cricket Australia says the full Powerplay restriction applies from the next ball when the innings countdown expires, even partway through an over. Only two fielders may be outside the restriction circle for the remaining innings. The announced WBBL timer for twenty overs is **78 minutes 45 seconds**. [CA rule-change announcement](https://www.cricket.com.au/news/4568917).
 
-### Separate the three reasons for a restricted field
+## Separate the three reasons for a restricted field
 
 | Period | What identifies it |
 | --- | --- |
@@ -18,7 +18,7 @@ For 2026–27, Cricket Australia says the full Powerplay restriction applies fro
 
 CA’s announcement explicitly retains the four-plus-two structure. It changes the slow-over-rate response from the previous two-stage system to immediate full Powerplay conditions when the first countdown reaches zero. Do not import an older explanation in which only one extra fielder comes inside at that point. [2026 change](https://www.cricket.com.au/news/4568917).
 
-### A legal ball example
+## A legal ball example
 
 Suppose the timer expires after 18.2 overs in a twenty-over innings, and both normal restricted phases have already finished. This is a hypothetical illustration, not a report of an actual match.
 
@@ -26,7 +26,7 @@ At 18.2, the bowling side has delivered 110 legal balls. Ten remain to complete 
 
 The example also shows why rounding to the next over loses information. A label that begins the penalty at 19.0 would omit four legal balls from this scenario. Wides or no-balls need their own delivery records rather than being treated as extra legal balls.
 
-### What changes for phase statistics
+## What changes for phase statistics
 
 A first-six-overs scoring rate is a valid fixed-window statistic, but it is not automatically the WBBL Powerplay rate. It combines the four-over opening restriction with the next two overs, while the separate Surge can occur elsewhere in the innings.
 
@@ -34,7 +34,7 @@ For a faithful comparison, keep three labels: opening Powerplay, actual Power Su
 
 The same distinction matters when reading a player’s performance. Runs scored with two fielders outside the circle and runs scored under a normal late-innings field are different contexts. The label does not prove that a boundary was caused by the rule, but it makes the comparison interpretable.
 
-### Keep the season and match conditions attached
+## Keep the season and match conditions attached
 
 A rule explanation from another season may describe the old timer procedure, even when the familiar Power Surge name is unchanged.
 

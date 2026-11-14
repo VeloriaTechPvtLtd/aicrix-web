@@ -8,13 +8,13 @@ ODI batting rankings tell you where a player stands in the ICC’s rating system
 
 For the current positions, use the [ICC men’s ODI batting rankings](https://www.icc-cricket.com/rankings/batting/mens/odi) and check the date shown with the table. The explanation below helps you interpret the figures rather than treating a saved screenshot as a live update.
 
-### Rank and rating are different numbers
+## Rank and rating are different numbers
 
 A rank is the player’s position in the table. A rating is the points total used to order that table. The ICC describes player ratings on a scale from 0 to 1,000, calculated through a moving-average system. Read 800 as a rating on that scale. It does not mean 800 runs or an 80% chance of success in the next innings. [ICC rankings overview](https://www.icc-cricket.com/rankings/about).
 
 Two players can be adjacent in rank but far apart in rating. Conversely, several players may sit close together on points. Look at the gap as well as the position before describing a change as a large improvement.
 
-### A position can change without the same change in points
+## A position can change without the same change in points
 
 Consider this invented example, which illustrates ordering rather than the ICC’s performance formula.
 
@@ -28,7 +28,7 @@ Among these three players, A begins first and finishes second even though A’s 
 
 This is why “dropped one place” and “lost rating points” should not be used interchangeably. When reading a rankings update, compare the old and new points and check what happened to the players nearby.
 
-### Runs alone do not reproduce the rating
+## Runs alone do not reproduce the rating
 
 The ICC’s current overview says its algorithm evaluates match circumstances and that factors differ by format. Its FAQ explains that performances across a player’s career contribute, with greater emphasis on recent performances. A single innings total or a short recent-form average does not reproduce that calculation. [ICC overview](https://www.icc-cricket.com/rankings/about) and [rankings FAQ](https://www.icc-cricket.com/rankings/faqs).
 
@@ -36,13 +36,13 @@ For example, scoring 50 does not mean adding 50 points to the previous rating. N
 
 A runs leaderboard remains useful when the question is “Who scored most in this tournament?” The rankings table is useful when the question concerns a player’s position in the ICC system. Choose the measure that matches the comparison.
 
-### Check the update date
+## Check the update date
 
 The ICC FAQ describes weekly player-ranking updates, with women’s lists on Tuesday and men’s lists on Wednesday. It says those updates include matches completed by the previous day. Check the table’s displayed effective date rather than assuming a newly finished match is already included. [ICC rankings FAQ](https://www.icc-cricket.com/rankings/faqs).
 
 Also separate a player appearing without batting from a player missing the match. The FAQ says a batter’s rating is unchanged when the player appears but does not bat. A “did not bat” scorecard entry should not be read as a zero-run innings.
 
-### Use rankings as one part of match research
+## Use rankings as one part of match research
 
 Before using a ranking in a player comparison, check:
 

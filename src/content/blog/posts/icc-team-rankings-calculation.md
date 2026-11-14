@@ -8,7 +8,7 @@ An ICC team rating is an average of rating points over the relevant match or ser
 
 The calculation is easier to follow when its two jobs are separated. First, the rating system assigns points to results. Second, those points and the corresponding match or series units are combined with the applicable time weighting. Dividing only the numerator, or mixing weighted points with an unweighted match count, changes the answer.
 
-### Start with the numerator and denominator
+## Start with the numerator and denominator
 
 Imagine a fictional white-ball team with the following already-assigned rating-point ledger. The point inputs are invented to teach the averaging step; they are not the ICC awards for any named result.
 
@@ -22,7 +22,7 @@ The weighted rating is **4,400÷20=220**. Dividing those weighted points by all 
 
 The newer group averages 240 and the older group 200. Giving the newer group more influence raises the combined result compared with the unweighted average. If the newer group were weaker instead, the direction could reverse. Time weighting is not automatically a bonus.
 
-### Which dates received which weight in 2026
+## Which dates received which weight in 2026
 
 The ICC’s **5 May 2026 T20I annual update** states that matches since May 2025 received full weight and those from the preceding two years received half weight. It also reports the updated men’s and women’s tables. That is the dated weighting basis illustrated above, not a timeless rule that the same calendar years always remain included. [Official annual update](https://www.icc-cricket.com/media-releases/india-and-australia-retain-top-positions-in-men-s-and-women-s-t20i-team-rankings-after-annual-update).
 
@@ -30,7 +30,7 @@ In that update India’s men moved from 273 to 275 and England from 259 to 262. 
 
 The women’s table supplies a different example: Australia remained first, but the release says its lead over England narrowed from 18 to 12. These are May update observations, not current November positions or forecasts for a future match.
 
-### Why the next win is not a fixed points bonus
+## Why the next win is not a fixed points bonus
 
 The averaging example starts with assigned points. It does not explain how every real result earns those points.
 
@@ -38,13 +38,13 @@ The ICC’s detailed historical Test-method explanation says result and opponent
 
 It would be wrong to add an assumed ten points directly to a displayed rating after a win. Both the cumulative points and the relevant denominator need updating. The match/series distinction also matters: the white-ball illustration above is not a complete Test-series calculator.
 
-### Do not substitute a tournament points table
+## Do not substitute a tournament points table
 
 World Test Championship percentage, league points and ICC team ratings answer different questions. A tournament can award a fixed number of competition points for a win; that does not make those points the input to the ICC team-rating numerator.
 
 WTC points percentage needs its own competition-specific calculation. For an ICC table, retain the format, rating and date. Adding national player ratings together creates neither an official team rating nor a useful shortcut to one.
 
-### Check when a change belongs in the table
+## Check when a change belongs in the table
 
 ICC’s FAQ distinguishes weekly player updates from team updates after each Test series and each ODI or T20I. Annual reweighting is another reason a comparison needs dates. [Official update guidance](https://www.icc-cricket.com/rankings/faqs).
 
