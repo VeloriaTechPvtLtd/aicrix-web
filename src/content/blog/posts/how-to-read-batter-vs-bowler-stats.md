@@ -109,3 +109,7 @@ Confirm the names, format, dates and underlying counts. Read runs and dismissals
 [Explore AiCrix’s player-analysis overview](https://aicrix.com/player-analysis) for the surrounding context, and use the [player-impact guide](https://aicrix.com/guides/player-prediction) to distinguish a player’s overall role from one narrow matchup.
 
 The numbers in this article are illustrative calculations, not records for real players or a claim about AiCrix model performance.
+
+## Related reading
+
+- [Batting average and strike rate: worked examples](/blog/batting-average-vs-strike-rate)

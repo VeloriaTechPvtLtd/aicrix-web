@@ -41,3 +41,7 @@ The word “deliberate” is not a shortcut either. A purposeful attempt to save
 For an ordinary boundary, the relevant crossing check is when the boundary is scored. For an overthrow boundary, it is when the throw is made. Those different timestamps explain why two similar-looking clips can yield different totals.
 
 This guide concerns boundary awards. It does not add an automatic four when a wayward throw remains in play. Nor does the word “overthrow” itself identify who receives the runs on the scorecard: batting and extras attribution is a separate scoring question.
+
+## Related reading
+
+- [Which runs count against the bowler?](/blog/cricket-extras-bowler-runs-maiden-over)

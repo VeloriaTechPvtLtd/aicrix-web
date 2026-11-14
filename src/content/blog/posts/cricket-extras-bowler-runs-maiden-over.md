@@ -40,3 +40,7 @@ For example, six legal scoreless deliveries plus a separate no-ball penalty requ
 One useful audit is to compare the sum of all batter runs plus all extras with the team total. Separately, compare the bowlers’ combined conceded runs plus byes, leg byes and applicable penalty runs with that same total. Do not add wides and no-ball extras a second time to the bowling sum.
 
 The accounting category matters more than an assumption about who was at fault. Read the umpire’s signal and the official score record. For competition-specific variations, use that competition’s conditions alongside the Laws.
+
+## Related reading
+
+- [Overthrows versus misfields](/blog/overthrow-vs-misfield-cricket)

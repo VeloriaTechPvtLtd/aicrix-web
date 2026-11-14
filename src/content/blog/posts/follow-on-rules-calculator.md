@@ -50,3 +50,7 @@ No. The qualifying lead creates a choice. Once the captain notifies the opponent
 For tactical analysis, separate eligibility from preference. A calculator can establish whether the option exists. It cannot decide how tired the bowlers are, how the pitch will play later or how a captain values batting again.
 
 For a Ranji Trophy or other domestic fixture, confirm the season's playing conditions and scheduled duration before entering a threshold. Record the first-innings total, the applicable lead and the first day on which play actually started. Those are the inputs that make the answer reproducible.
+
+## Related reading
+
+- [A tie versus a draw in Test cricket](/blog/tie-vs-draw-test-cricket)

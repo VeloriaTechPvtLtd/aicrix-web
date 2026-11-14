@@ -53,3 +53,7 @@ The same principle applies when joining monthly or seasonal records. Preserve th
 Did not bat is not a score of zero and not another unbeaten batting innings. Only actual batting innings belong in that count. If the hypothetical player also appeared in a fifth match without batting, the four-innings calculations above would not change.
 
 Before comparing players, display innings, dismissals and balls beside the rates. Keep batting role, opposition and sample size in view. Two players can share an average and strike rate while reaching them through very different workloads and distributions.
+
+## Related reading
+
+- [How to read batter-versus-bowler statistics](/blog/how-to-read-batter-vs-bowler-stats)
