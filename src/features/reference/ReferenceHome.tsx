@@ -7,6 +7,7 @@ import { World } from "./World";
 import { Screens } from "./Screens";
 import { Reviews } from "./Reviews";
 import { Help } from "./Help";
+import { HomeBlog } from "./HomeBlog";
 import { DownloadBanner } from "./DownloadBanner";
 
 export function ReferenceHome() {
@@ -21,6 +22,7 @@ export function ReferenceHome() {
         <Screens />
         <Reviews />
         <Help />
+        <HomeBlog />
         <DownloadBanner />
       </main>
     </SiteShell>

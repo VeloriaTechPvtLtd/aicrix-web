@@ -1,3 +1,5 @@
+import matter from 'gray-matter';
+import policy from '../src/content/blog/content-policy.cjs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
@@ -21,7 +23,7 @@ test('all rendered local navigation, scripts, styles and images resolve', () => 
 });
 
 test('all nine existing blog posts keep their rendered URL and canonical', () => {
-  const posts = readdirSync('src/content/blog/posts').filter(name => name.endsWith('.md'));
+  const posts = [...policy.LEGACY_SLUGS].map(slug => `${slug}.md`);
   assert.equal(posts.length, 9);
   const sitemap = readFileSync('out/sitemap.xml', 'utf8');
   for (const post of posts) {
@@ -29,7 +31,12 @@ test('all nine existing blog posts keep their rendered URL and canonical', () =>
     const html = readFileSync(`out/blog/${slug}.html`, 'utf8');
     assert.ok(html.includes(`rel="canonical" href="https://aicrix.com/blog/${slug}"`), slug);
     assert.ok(html.includes('"@type":"Article"'), slug);
-    assert.ok(sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
+    const { data } = matter(readFileSync(`src/content/blog/posts/${post}`, 'utf8'));
+    if (data.archived) {
+      assert.ok(!sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
+      assert.ok(html.includes('noindex, follow'), slug);
+      assert.ok(!readFileSync('out/blog.html', 'utf8').includes(`/blog/${slug}`), slug);
+    } else assert.ok(sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
   }
 });
 
@@ -65,3 +72,27 @@ test('homepage content is server rendered, assets are local, and accuracy claims
   assert.ok(!html.includes('chatgpt.site'));
   assert.ok(!html.includes('<iframe'));
 });
+
+ test('staged drafts are absent from production output and sitemap', () => {
+ const sitemap = readFileSync('out/sitemap.xml', 'utf8');
+ for (const file of readdirSync('src/content/blog/posts')) {
+ const slug = file.replace(/\.md$/, '');
+ if (policy.LEGACY_SLUGS.has(slug)) continue;
+ assert.ok(!existsSync(`out/blog/${slug}.html`), slug);
+ assert.ok(!sitemap.includes(`/blog/${slug}`), slug);
+ }
+ });
+
+ test('lineup revision material is consolidated into its existing guide', () => {
+ const html = readFileSync('out/guides/playing-xi.html', 'utf8');
+ for (const text of ['Late changes and alert timing', '17:35', '17:53', 'Radha Yadav', '<table']) assert.ok(html.includes(text), text);
+ assert.ok(!existsSync('out/blog/probable-confirmed-playing-xi-late-changes.html'));
+ });
+
+ test('probability material enriches the existing guide without fabricated forecasts', () => {
+ const html = readFileSync('out/guides/match-prediction.html', 'utf8');
+ for (const text of ['Read uncertainty without inventing a forecast', '22 from 18', '32 from 18', 'not a schedule promising seven wins']) assert.ok(html.includes(text), text);
+ });
+
+import { assertPublishedHomeBlog } from './home-blog-assertions.mjs';
+test('homepage promotes three published, non-archived articles near the bottom', assertPublishedHomeBlog);

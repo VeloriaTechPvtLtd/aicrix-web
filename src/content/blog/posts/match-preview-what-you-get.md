@@ -1,31 +1,32 @@
 ---
-title: Match Preview — What You Get Before Every Game
-excerpt: Win probability, key player impact, toss advantage, and venue intelligence — a quick guide to the match preview content in the AICRIX app.
+title: "Cricket Match Previews: What to Check Before a Game"
+excerpt: "A practical checklist for reading a match preview: fixture details, confirmed teams, conditions and forecast timestamps."
 date: 2026-03-07
 image: /og-image.png
 author: AICRIX Team
+updated: 2026-11-14
 ---
 
-Every match in the AICRIX app comes with a **match preview**: a snapshot of our AI analysis delivered seconds before the first ball. Here’s what’s inside.
+A useful match preview separates confirmed information from expectations. Start with the fixture and team news before treating any prediction as current.
 
-## Win probability
+## Confirm the fixture
 
-We show a clear percentage for each team’s chance of winning, based on five ML models and 200+ variables. These are not guesses — they’re confidence-weighted outputs that we’ve validated at 89% accuracy. You see who the model favors and by how much.
+Check the teams, competition, format, venue, date and local start time against the organiser’s schedule. A page about a previous meeting is not a preview of the next one.
 
-## Key player impact
+## Separate squads from playing XIs
 
-Each fixture gets its **own** player analysis. We compute a match-specific Key Player Impact Index: who is likely to outperform or underperform in this game, given form, opposition matchups, venue history, and conditions. It’s different for every match, so you know which players matter most for that game.
+A squad announcement establishes the available group, not the final lineup. Look for an official playing XI before relying on a player’s involvement. If the preview uses a probable lineup, it should say so.
 
-## Toss impact
+## Read the conditions as evidence, not certainty
 
-We estimate how much the toss matters at this venue — batting first win rates, dew, pitch behavior. You see whether winning the toss gives a real edge or if the surface is more balanced.
+A venue average is historical context, not a promised total. Check the match sample and format. Weather forecasts and pitch observations can change, so read their timestamps and sources. Do not treat an expectation of dew as a confirmed observation.
 
-## Venue and conditions
+## Understand what the forecast means
 
-The preview includes a short venue summary: typical first-innings scores, pitch character, and any weather or dew factors. Enough context to interpret the win probability and toss impact.
+A win probability estimates an outcome; it cannot guarantee the result. Check when the estimate was generated and whether it includes the toss and confirmed teams. For a well-calibrated model, similarly rated outcomes should occur at roughly the stated frequency over many predictions, not necessarily in the match you are watching. See [scikit-learn’s probability calibration explanation](https://scikit-learn.org/stable/modules/calibration.html).
 
-## Where to find it
+## Keep the preview current
 
-Open the AICRIX app, go to **Predictions**, and tap any upcoming match. The preview is at the top: win probability, key players, toss impact, and venue intelligence. During the match, win probability updates in real time.
+Before the first ball, recheck the fixture status, confirmed XIs and forecast timestamp. During play, an old pre-match assessment should not be presented as a live update.
 
-Match previews are built so you can quickly see what our AI thinks — and why — before and during every game.
+This is a reading checklist, not a guarantee that every fixture or feature is available in AiCrix. Check the current app screen for coverage and update times.

@@ -1,3 +1,6 @@
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { playingXiRevisions } from "@/content/guides/playing-xi-revisions";
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
@@ -49,6 +52,7 @@ export function PlayingXiGuide() {
             <a href="#revisit-connected-outlooks">
               {"Revisit connected predictions"}
             </a>
+            <a href="#lineup-revisions">{"Late changes and alert timing"}</a>
             <a href="#questions">{"Common questions"}</a>
           </nav>
           <div className="article-body">
@@ -95,6 +99,14 @@ export function PlayingXiGuide() {
                   "A lineup change can alter the assumptions behind a match prediction or fantasy selection. Return to those views with the updated information. An official announcement confirms selection; it does not guarantee a particular performance."
                 }
               </p>
+            </section>
+            <section id="lineup-revisions">
+              <h2>Late changes and alert timing</h2>
+              <p>Read the source publication time, the lineup version and the time an alert reached you separately. A new notification does not necessarily mean a new selection.</p>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
+                h2: ({ children }) => <h3>{children}</h3>,
+                table: ({ children }) => <div className="table-scroll" role="region" aria-label="Lineup revision table" tabIndex={0}><table>{children}</table></div>,
+              }}>{playingXiRevisions}</ReactMarkdown>
             </section>
             <section id="questions">
               <h2>{"Common questions"}</h2>

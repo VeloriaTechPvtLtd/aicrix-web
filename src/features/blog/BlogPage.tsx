@@ -37,7 +37,8 @@ export const BlogPage = () => {
   );
 };
 
-function formatDate(iso: string): string {
+function formatDate(iso?: string): string {
+  if (!iso) return 'Editorial preview';
   const d = new Date(iso);
   return d.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
