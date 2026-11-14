@@ -93,3 +93,6 @@ test('homepage content is server rendered, assets are local, and accuracy claims
  const html = readFileSync('out/guides/match-prediction.html', 'utf8');
  for (const text of ['Read uncertainty without inventing a forecast', '22 from 18', '32 from 18', 'not a schedule promising seven wins']) assert.ok(html.includes(text), text);
  });
+
+import { assertPublishedHomeBlog } from './home-blog-assertions.mjs';
+test('homepage promotes three published, non-archived articles near the bottom', assertPublishedHomeBlog);

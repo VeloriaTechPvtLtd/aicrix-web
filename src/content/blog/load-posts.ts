@@ -14,6 +14,7 @@ export interface BlogPostMeta {
   imageAlt?: string;
   imageCaption?: string;
   preview: boolean;
+  published: boolean;
   archived: boolean;
 }
 
@@ -73,6 +74,7 @@ function loadAll(): BlogPost[] {
       imageAlt: data.imageAlt as string | undefined,
       imageCaption: data.imageCaption as string | undefined,
       preview,
+      published,
       archived: data.archived === true,
     });
   }
@@ -97,4 +99,9 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 
 export function getAllSlugs(): string[] {
   return getAllPosts().map((p) => p.slug);
+}
+
+/** Public discovery surfaces never inherit the editorial-preview audience. */
+export function getPublishedBlogPosts(): BlogPost[] {
+  return getAllPosts().filter(post => post.published && !post.archived);
 }

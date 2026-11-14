@@ -40,3 +40,6 @@ test('article layout has a visible summary, reading metadata and one page headin
   const css = readFileSync('src/features/blog/blog-article.css', 'utf8');
   for (const rule of ['@media (max-width: 600px)', 'max-height: 360px', ':focus-visible', 'min-width: 520px']) assert.ok(css.includes(rule), rule);
 });
+
+import { assertPublishedHomeBlog } from './home-blog-assertions.mjs';
+test('homepage still excludes all drafts in editorial preview mode', assertPublishedHomeBlog);
