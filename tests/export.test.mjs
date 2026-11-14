@@ -82,3 +82,9 @@ test('homepage content is server rendered, assets are local, and accuracy claims
  assert.ok(!sitemap.includes(`/blog/${slug}`), slug);
  }
  });
+
+ test('lineup revision material is consolidated into its existing guide', () => {
+ const html = readFileSync('out/guides/playing-xi.html', 'utf8');
+ for (const text of ['Late changes and alert timing', '17:35', '17:53', 'Radha Yadav', '<table']) assert.ok(html.includes(text), text);
+ assert.ok(!existsSync('out/blog/probable-confirmed-playing-xi-late-changes.html'));
+ });

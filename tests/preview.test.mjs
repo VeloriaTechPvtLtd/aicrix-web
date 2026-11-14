@@ -26,3 +26,7 @@ test('worked tables and disclosed illustration render as semantic HTML', () => {
   assert.ok(html.includes('AI-generated cricket equipment illustration.'));
   assert.ok(html.includes('src="/images/blog/cricket-bat-ball.png"'));
 });
+
+ test('preview guide inherits the global noindex protection', () => {
+ assert.ok(readFileSync('out/guides/playing-xi.html', 'utf8').includes('noindex, nofollow'));
+ });

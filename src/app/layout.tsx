@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   description: defaultDescription,
   keywords:
     "cricket predictions, AI cricket, match predictions, cricket analytics, fantasy cricket, win probability, cricket app",
-  robots: "index, follow",
+  robots: process.env.BLOG_PREVIEW === "true" ? "noindex, nofollow" : "index, follow",
   openGraph: {
     type: "website",
     title: defaultTitle,
