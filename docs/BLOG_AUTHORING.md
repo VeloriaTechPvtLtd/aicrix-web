@@ -95,3 +95,5 @@ Before changing any article to published:
 Prioritize answer-first explanations, useful examples, credible sources, and natural links to relevant guides over article volume. Article structured data must match visible content. There is no special AI-search markup requirement and no ranking guarantee. After an authorized public release, verify canonical/indexing status and submit the sitemap in Search Console. Do not use Google's Indexing API for blog articles. Track indexed canonical pages, query impressions, clicks, CTR and meaningful app-download conversions by topic; consolidate low-value duplicate intent rather than scaling thin pages.
 
 References: https://developers.google.com/search/docs/appearance/ai-features ; https://developers.google.com/search/docs/appearance/structured-data/article ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+Run `npm run test:preview` after a local `BLOG_PREVIEW=true npm run build`. It verifies all staged article routes are noindex and the preview sitemap is empty. Rebuild without BLOG_PREVIEW before running production export tests. Browser visual QA is separate from these HTML checks.

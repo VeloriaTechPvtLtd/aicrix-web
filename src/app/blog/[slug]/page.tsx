@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       url: postUrl,
       siteName: "AICRIX",
-      images: [{ url: imageUrl, width: 1200, height: 630 }],
+      images: [{ url: imageUrl }],
       publishedTime: post.preview ? undefined : post.date,
       modifiedTime: post.preview ? undefined : post.updated,
       ...(post.author && { authors: [post.author] }),
@@ -67,11 +67,7 @@ export default async function Page({ params }: Props) {
     headline: post.title,
     description: post.excerpt,
     ...(post.preview ? {} : { datePublished: post.date, dateModified: post.updated ?? post.date }),
-    author: {
-      "@type": "Organization",
-      name: post.author ?? "AICRIX",
-      url: SITE_URL,
-    },
+    ...(post.author ? { author: { "@type": "Organization", name: post.author, url: SITE_URL } } : {}),
     publisher: {
       "@type": "Organization",
       name: "AICRIX",

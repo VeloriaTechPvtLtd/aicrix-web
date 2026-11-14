@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "next lint",
     "test:export": "node --test tests/export.test.mjs",
-    "test:content": "node --test tests/content.test.mjs"
+    "test:content": "node --test tests/content.test.mjs",
+    "test:preview": "node --test tests/preview.test.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
