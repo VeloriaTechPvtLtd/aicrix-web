@@ -46,9 +46,10 @@ the old URL, configured for the deployment host.
   caches the post collection in memory.
 - Run `npm run lint`, `npx tsc --noEmit`, then `npm run build` before release.
 - Commit the post and any images, review the diff, and deploy a new build. Adding
-  or editing Markdown alone does not update an already deployed site. There is no
-  scheduled publishing or draft filter: every `.md` file in the directory is
-  included, even if its date is in the future. Keep drafts outside this directory.
+  or editing Markdown alone does not update an already deployed site. Draft and
+  future-dated posts are excluded by the content policy. Keep new
+  work marked `status: draft`; use the local-only preview workflow below to
+  inspect it. Merging a draft article does not approve or publish it.
 - Firebase/static hosting uses the generated `out/` directory. Vercel uses normal
   Next.js output. Preserve the existing environment-dependent build configuration.
 
@@ -79,7 +80,7 @@ AI-generated illustrations must be disclosed and never represented as photograph
 
 ## Current review coverage
 
-243 individually revised educational and historical match articles are staged from a frozen 503-draft membership snapshot. 246 source drafts have received individual editorial review; the venue average/par manuscript has additionally been consolidated into the existing venue URL, the probable/confirmed playing-XI manuscript is consolidated into its existing guide, and probability-interpretation material is consolidated into the match-prediction guide. 257 drafts are not integrated. All 243 staged articles have also passed an independent scoped source/arithmetic audit; this is not publication approval. The hit-wicket article is expressly MCC-scoped and no longer asserts the disputed cross-reference interpretation.
+302 individually revised educational and historical match articles are staged from a frozen 503-draft membership snapshot. 305 source drafts have received individual editorial review; the venue average/par manuscript has additionally been consolidated into the existing venue URL, the probable/confirmed playing-XI manuscript is consolidated into its existing guide, and probability-interpretation material is consolidated into the match-prediction guide. 198 drafts are not integrated. All 302 staged articles have also passed an independent scoped source/arithmetic audit; this is not publication approval. The hit-wicket article is expressly MCC-scoped and no longer asserts the disputed cross-reference interpretation.
 
 Zero new articles are release-approved. Rendered/mobile/accessibility review and accountable editorial release approval remain outstanding. Local Chromium cannot start under this environment's socket restriction; HTML tests are not a substitute for visual QA. Independent review corrected a VJD report-date wording issue; all current staged articles have completed scoped second factual/arithmetic review. Private source pages and provenance manifests must never enter this public repository.
 
