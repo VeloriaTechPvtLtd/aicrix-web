@@ -25,7 +25,7 @@ The [2026 rulebook](https://www.thehundred.com/fantasy-rules) specifies a maximu
 
 ## The eight block deadlines
 
-The [official seasonal rules](https://www.thehundred.com/fantasy-rules) confirms eight blocks, with unlimited squad changes for each new block. The detailed rulebook gives these historical deadlines, all in British Summer Time.
+The [official seasonal rules](https://www.thehundred.com/fantasy-rules) confirm eight blocks, with unlimited squad changes for each new block. The detailed rulebook gives these historical deadlines, all in British Summer Time.
 
 | Block | 2026 deadline |
 | --- | --- |

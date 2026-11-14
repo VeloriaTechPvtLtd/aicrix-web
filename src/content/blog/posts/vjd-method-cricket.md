@@ -32,7 +32,7 @@ Use that description to understand the idea, not to manufacture a target from an
 
 ### Is VJD the same as the ICC method
 
-No. In June 2012, the ICC Cricket Committee considered VJD as a replacement for D/L and decided to retain D/L. That is a dated decision about the methods reviewed then, not proof that one is universally superior today. [ICC committee report](https://www.icc-cricket.com/news/results-of-the-icc-cricket-committee-meeting-at-lords). Current international DLS documentation is a separate rules source.
+No. In a report published on 1 June 2012, the ICC said its Cricket Committee had considered VJD as a replacement for D/L and decided to retain D/L. That is a dated decision about the methods reviewed then, not proof that one is universally superior today. [ICC committee report](https://www.icc-cricket.com/news/results-of-the-icc-cricket-committee-meeting-at-lords). Current international DLS documentation is a separate rules source.
 
 The Pune result establishes VJD use in this specific senior domestic competition in 2026. It does not establish the rule for every match played in India. An international, a franchise league and a domestic state competition can require different checks.
 

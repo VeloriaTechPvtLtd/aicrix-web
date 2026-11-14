@@ -44,7 +44,7 @@ Combining D’s wickets before testing the five-wicket threshold would create a 
 
 A player can be selected without batting in a team innings that takes place. That is different from the team never needing another innings at all. Neither is a dismissal for zero, and neither should be filled with an invented score.
 
-For a hypothetical example, Team A makes151 and179 while Team B makes415/9 declared. Team B wins by an innings and85 runs:415−151−179=85. Suppose Player F was selected for B but did not bat. That is DNB in an innings that occurred; B’s second innings never occurs. These are invented scorecard inputs, not a historical match claim.
+For a hypothetical example, Team A makes 151 and 179 while Team B makes 415/9 declared. Team B wins by an innings and 85 runs: 415 − 151 − 179 = 85. Suppose Player F was selected for B but did not bat. That is DNB in an innings that occurred; B’s second innings never occurs. These are invented scorecard inputs, not a historical match claim.
 
 | Ledger state | What it records | What not to infer |
 | --- | --- | --- |

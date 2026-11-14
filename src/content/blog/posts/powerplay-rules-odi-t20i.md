@@ -1,5 +1,5 @@
 ---
-title: "Powerplay rules in mens ODIs and T20Is"
+title: "Powerplay rules in men’s ODIs and T20Is"
 excerpt: "Compare men's ODI and T20I powerplay fielding restrictions, scheduled phases and shortened-match adjustments without mixing international and league rules."
 status: draft
 ---
