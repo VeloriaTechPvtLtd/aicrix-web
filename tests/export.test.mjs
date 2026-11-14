@@ -1,3 +1,4 @@
+import policy from '../src/content/blog/content-policy.cjs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
@@ -21,7 +22,7 @@ test('all rendered local navigation, scripts, styles and images resolve', () => 
 });
 
 test('all nine existing blog posts keep their rendered URL and canonical', () => {
-  const posts = readdirSync('src/content/blog/posts').filter(name => name.endsWith('.md'));
+  const posts = [...policy.LEGACY_SLUGS].map(slug => `${slug}.md`);
   assert.equal(posts.length, 9);
   const sitemap = readFileSync('out/sitemap.xml', 'utf8');
   for (const post of posts) {
@@ -65,3 +66,13 @@ test('homepage content is server rendered, assets are local, and accuracy claims
   assert.ok(!html.includes('chatgpt.site'));
   assert.ok(!html.includes('<iframe'));
 });
+
+ test('staged drafts are absent from production output and sitemap', () => {
+ const sitemap = readFileSync('out/sitemap.xml', 'utf8');
+ for (const file of readdirSync('src/content/blog/posts')) {
+ const slug = file.replace(/\.md$/, '');
+ if (policy.LEGACY_SLUGS.has(slug)) continue;
+ assert.ok(!existsSync(`out/blog/${slug}.html`), slug);
+ assert.ok(!sitemap.includes(`/blog/${slug}`), slug);
+ }
+ });

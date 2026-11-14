@@ -1,14 +1,19 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { dateString, validatePost, isPublished } from "./content-policy.cjs";
 
 export interface BlogPostMeta {
   slug: string;
   title: string;
   excerpt: string;
-  date: string;
+  date?: string;
   image?: string;
   author?: string;
+  updated?: string;
+  imageAlt?: string;
+  imageCaption?: string;
+  preview: boolean;
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -45,15 +50,14 @@ function loadAll(): BlogPost[] {
       console.error(`[blog] Failed to parse frontmatter in ${name}:`, err);
       continue;
     }
-    const title = (data.title as string) ?? slug;
-    const excerpt = (data.excerpt as string) ?? "";
-    const dateRaw = data.date;
-    const date =
-      typeof dateRaw === "string"
-        ? dateRaw
-        : dateRaw instanceof Date
-          ? dateRaw.toISOString().slice(0, 10)
-          : new Date().toISOString().slice(0, 10);
+    const errors = validatePost(data, slug);
+    if (errors.length) throw new Error(`[blog] ${name}: ${errors.join(", ")}`);
+    const published = isPublished(data, slug);
+    const preview = process.env.BLOG_PREVIEW === "true";
+    if (!published && !preview) continue;
+    const title = data.title as string;
+    const excerpt = data.excerpt as string;
+    const date = dateString(data.date);
     const image = data.image as string | undefined;
     const author = data.author as string | undefined;
     posts.push({
@@ -64,9 +68,13 @@ function loadAll(): BlogPost[] {
       image,
       author,
       body: content.trim(),
+      updated: dateString(data.updated),
+      imageAlt: data.imageAlt as string | undefined,
+      imageCaption: data.imageCaption as string | undefined,
+      preview,
     });
   }
-  posts.sort((a, b) => (b.date < a.date ? -1 : 1));
+  posts.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.slug.localeCompare(b.slug));
   return posts;
 }
 

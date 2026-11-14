@@ -1,36 +1,24 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+const { isPublished, dateString } = require("./src/content/blog/content-policy.cjs");
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://aicrix.com";
 const POSTS_DIR = path.join(process.cwd(), "src", "content", "blog", "posts");
 
 function getBlogSlugsWithDates() {
-  try {
-    const names = fs.readdirSync(POSTS_DIR);
-    return names
-      .filter((name) => name.endsWith(".md"))
-      .map((name) => {
-        const slug = name.replace(/\.md$/, "");
-        const filePath = path.join(POSTS_DIR, name);
-        let date = new Date().toISOString().split("T")[0];
-        try {
-          const raw = fs.readFileSync(filePath, "utf8");
-          const { data } = matter(raw);
-          if (data.date) {
-            date =
-              typeof data.date === "string"
-                ? data.date
-                : data.date instanceof Date
-                  ? data.date.toISOString().split("T")[0]
-                  : date;
-          }
-        } catch (_) {}
-        return { slug, lastmod: date };
-      });
-  } catch {
-    return [];
-  }
+  return fs.readdirSync(POSTS_DIR).filter(name => name.endsWith(".md")).flatMap(name => {
+    const slug = name.replace(/\.md$/, "");
+    const { data } = matter(fs.readFileSync(path.join(POSTS_DIR, name), "utf8"));
+    return isPublished(data, slug) ? [{ slug, lastmod: dateString(data.updated) || dateString(data.date) }] : [];
+  });
+}
+const publishedSlugs = new Set(getBlogSlugsWithDates().map(post => post.slug));
+// next-sitemap emits no file for an empty sitemap; replace any stale copied sitemap.
+if (process.env.BLOG_PREVIEW === "true") {
+  const output = process.env.VERCEL ? "public" : "out";
+  fs.mkdirSync(output, { recursive: true });
+  fs.writeFileSync(path.join(output, "sitemap.xml"), '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>');
 }
 
 /** @type {import('next-sitemap').IConfig} */
@@ -39,6 +27,12 @@ module.exports = {
   // Next.js src/app/robots.ts owns /robots.txt for both deployment modes.
   generateRobotsTxt: false,
   generateIndexSitemap: false,
+  autoLastmod: false,
+  transform: async (config, url) => {
+    if (process.env.BLOG_PREVIEW === "true") return null;
+    if (url.startsWith("/blog/") && !publishedSlugs.has(url.slice(6))) return null;
+    return { loc: url, changefreq: config.changefreq, priority: config.priority };
+  },
   changefreq: "weekly",
   priority: 0.7,
   // Vercel builds without `output: "export"` (no `out/`). Static-export
@@ -46,6 +40,7 @@ module.exports = {
   outDir: process.env.VERCEL ? "public" : "out",
   exclude: ["/robots.txt", "/404", "/404/*", "/500", "/_not-found", "/_error"],
   additionalPaths: async () => {
+    if (process.env.BLOG_PREVIEW === "true") return [];
     const staticPaths = [
       { loc: "/", changefreq: "weekly", priority: 1 },
       { loc: "/about-us", changefreq: "monthly", priority: 0.8 },

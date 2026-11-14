@@ -68,3 +68,30 @@ and excludes error pages. `NEXT_PUBLIC_SITE_URL` must be the intended canonical
 origin, normally `https://aicrix.com`. See `docs/SEARCH_CONSOLE.md` for search
 verification guidance. Preserve all existing blog URLs and legal/contact routes
 when changing the design.
+
+## Reviewed draft staging (2026-11-14)
+
+New articles require `status: draft` or `status: published`. Drafts may omit `date`; published articles require a real ISO publication date. Optional `updated` must reflect substantive review, not the build time. Future-dated articles are not published. Existing nine URLs retain their prior behavior.
+
+Normal builds omit drafts from routes, index and sitemap. For local editorial review only, run `BLOG_PREVIEW=true npm run build`; preview blog pages are noindex and its robots disallows crawling. Do not deploy preview output. Rebuild normally before any authorized production release. Draft PR does not authorize release.
+
+Use `image`, `imageAlt`, and `imageCaption` for local editorial assets. AI-generated illustrations must be disclosed and never represented as photographs of real matches. Markdown tables are rendered with GFM and a horizontally scrollable region.
+
+## Batch coverage and release gates
+
+This initial batch stages nine revised educational articles. Ten source drafts received editorial review; venue-average versus par is held for consolidation with the existing venue report. This is not completion of the 503-draft collection: 494 drafts are not integrated here. No new article is release-approved. In particular, the tie/draw historical example still needs independent scorecard corroboration. The retired-hurt article explicitly scopes its playing-condition claims to ICC Test conditions; do not extend those claims to IPL without a verified source.
+
+Before changing any article to published:
+- Recheck every factual claim and dated playing condition against the linked primary source.
+- Map one distinct search intent to a canonical URL; update existing coverage instead of duplicating it.
+- Check worked calculations, headings, descriptive links, mobile tables, image relevance and accessibility.
+- Assign accountable editorial ownership and actual publication/review dates. Do not invent author credentials.
+- Verify all internal links resolve in the intended release, not only in preview.
+- Run `npm run test:content`, TypeScript, build and `npm run test:export`; extend the fixed staging-count test as batches change.
+- Obtain editorial release approval separately from draft-PR review.
+
+## Organic growth and measurement
+
+Prioritize answer-first explanations, useful examples, credible sources, and natural links to relevant guides over article volume. Article structured data must match visible content. There is no special AI-search markup requirement and no ranking guarantee. After an authorized public release, verify canonical/indexing status and submit the sitemap in Search Console. Do not use Google's Indexing API for blog articles. Track indexed canonical pages, query impressions, clicks, CTR and meaningful app-download conversions by topic; consolidate low-value duplicate intent rather than scaling thin pages.
+
+References: https://developers.google.com/search/docs/appearance/ai-features ; https://developers.google.com/search/docs/appearance/structured-data/article ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap

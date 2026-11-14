@@ -9,6 +9,7 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   title: "Blog",
+  robots: process.env.BLOG_PREVIEW === "true" ? "noindex, nofollow" : "index, follow",
   description:
     "AICRIX blog: cricket analytics insights, AI updates, and tips for fantasy and analysis. Stay ahead with data-driven cricket intelligence.",
   keywords: "cricket blog, cricket analytics, AI predictions blog, fantasy cricket tips",

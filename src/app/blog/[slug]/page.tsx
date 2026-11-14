@@ -35,7 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: postUrl,
       siteName: "AICRIX",
       images: [{ url: imageUrl, width: 1200, height: 630 }],
-      publishedTime: post.date,
+      publishedTime: post.preview ? undefined : post.date,
+      modifiedTime: post.preview ? undefined : post.updated,
       ...(post.author && { authors: [post.author] }),
     },
     twitter: {
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(TWITTER_SITE && { site: TWITTER_SITE }),
       ...(TWITTER_CREATOR && { creator: TWITTER_CREATOR }),
     },
-    robots: "index, follow",
+    robots: post.preview ? "noindex, nofollow" : "index, follow",
   };
 }
 
@@ -65,8 +66,7 @@ export default async function Page({ params }: Props) {
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
+    ...(post.preview ? {} : { datePublished: post.date, dateModified: post.updated ?? post.date }),
     author: {
       "@type": "Organization",
       name: post.author ?? "AICRIX",
@@ -95,11 +95,11 @@ export default async function Page({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb).replace(/</g, "\\u003c") }}
       />
       <BlogPostPage post={post} />
     </>
