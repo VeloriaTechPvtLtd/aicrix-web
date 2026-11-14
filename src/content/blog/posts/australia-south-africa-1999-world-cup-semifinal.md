@@ -60,6 +60,6 @@ Klusener remained unbeaten on 31 from 16 balls. Donald was run out for zero with
 
 The ICC’s historical account explicitly identifies Australia’s higher Super Six finish as the progression basis. The semifinal’s equal totals were not recalculated using boundaries, wickets remaining or a hypothetical extra delivery. [ICC overview](https://www.icc-cricket.com/tournaments/cricketworldcup/news/mens-cricket-world-cup-1999-overview)
 
-This is also why the 1999 semifinal and the 2019 England–New Zealand final require separate explanations. Both are remembered for tied scores, but their tournament procedures were different. A modern Super Over guide should not be applied retrospectively to supply a missing finish in 1999.
+This is also why the 1999 semifinal and the [2019 England–New Zealand final](/blog/england-new-zealand-2019-world-cup-final) require separate explanations. Both are remembered for tied scores, but their tournament procedures were different. A modern Super Over guide should not be applied retrospectively to supply a missing finish in 1999.
 
 The precise summary is short: South Africa needed 214, finished level at 213, and Australia qualified through their prior tournament position. The final run-out was decisive for progression without changing the match’s recorded result from a tie.

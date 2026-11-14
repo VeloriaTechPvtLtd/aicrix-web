@@ -51,3 +51,5 @@ Pakistan began the twentieth over at 145/9, needing 13. Joginder’s first deliv
 The wide changed the score without consuming a legal delivery. The six then made one more six sufficient for victory, but Misbah’s dismissal ended the innings before that possibility could be used. This arithmetic explains the tension without inventing a probability of winning or judging what an alternative shot would have produced.
 
 Misbah finished with 43 from 38 balls. The memorable last catch settled the result, but the narrow margin was built across both innings: Gambhir and Rohit’s batting, Gul’s wickets, India’s economical spells and Pakistan’s lower-order recovery all preceded it. This is a dated final archive, not evidence of either team’s present strength.
+
+For the preceding matches, read the [Durban group-stage defence against South Africa](/blog/india-south-africa-durban-2007-world-t20) and the [semifinal against Australia](/blog/india-australia-durban-2007-t20-world-cup-semifinal).
