@@ -43,3 +43,8 @@ A return to a fielder is excluded from the hit-the-ball-twice dismissal, but tha
 Do not collapse those statements into “not out.” They identify which provision applies.
 
 Finally, a hit-the-ball-twice dismissal can occur from a no-ball, and the bowler does not receive wicket credit. [ICC clauses 34.1.3 and 34.5](https://images.icc-cricket.com/image/upload/prd/a8114zro5tkioifz0jqg.pdf). Record the actual ruling rather than treating every team wicket as a bowler’s wicket or every second touch as an offence.
+
+## Related reading
+
+- [Obstructing the Field: Running Lines and Returning the Ball](/blog/obstructing-the-field-cricket-rules)
+- [Hit wicket rules and when breaking your own stumps is not out](/blog/hit-wicket-cricket-rules)

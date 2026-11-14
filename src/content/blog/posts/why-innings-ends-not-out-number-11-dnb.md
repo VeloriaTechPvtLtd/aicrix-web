@@ -35,3 +35,8 @@ Suppose a team needs 101 and reaches 101/1. With no retirements, only three play
 Facing a delivery is not the sole test of whether an innings has begun. Under MCC Law 25.2, an incoming batter’s innings ordinarily starts on entering the field; the opening pair and new batters after a resumption start at the call of Play. [MCC Laws, Law 25.2](https://www.lords.org/getattachment/e8b12929-1e84-4927-af4e-2a5875b53589/Laws-of-Cricket-2017-Code-4th-Edition-%282026%29.pdf)
 
 A player can therefore enter, never face a ball, and finish on 0 not out when the partner completes the chase. That is different from never entering at all. Read the scorecard’s status as well as its runs and balls: a zero in one column cannot explain the whole innings.
+
+## Related reading
+
+- [Batting average vs strike rate: formulas and worked examples](/blog/batting-average-vs-strike-rate)
+- [Declaration versus forfeiture in Test cricket](/blog/declaration-versus-forfeiture-test-cricket)

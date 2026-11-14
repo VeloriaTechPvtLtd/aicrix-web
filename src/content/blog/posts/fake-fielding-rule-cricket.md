@@ -42,3 +42,8 @@ This clean scenario is deliberately limited. Adding other events requires a fres
 A useful match record should distinguish a suspected incident, the umpire’s ruling and the credited score. An article or social post saying “that should have been five” does not itself create an official five-run award. Do not rewrite a historical result by adding hypothetical penalty runs and presenting the new total as the match result.
 
 The same separation helps fantasy readers. Team runs, batter runs and a platform’s points are three different records. Check the applicable scoring rules before translating any penalty into an individual fantasy total; the sporting sanction alone does not supply that calculation.
+
+## Related reading
+
+- [Obstructing the Field: Running Lines and Returning the Ball](/blog/obstructing-the-field-cricket-rules)
+- [Dead ball rules and whether the delivery counts](/blog/dead-ball-cricket-delivery-counts)

@@ -51,3 +51,8 @@ Here crossing matters, but it is the crossing during the second run that matters
 In an ordinary run-out, if they have not crossed on the run in progress, the survivor returns to the wicket just left. Disallowed runs can require a different return. Also, a wide or no-ball does not complete a six-valid-ball over merely because it was the sixth delivery attempted. [ICC ODI clauses 18.12 and 17.3](https://images.icc-cricket.com/image/upload/prd/bxkzkcyvfn6tvi70zh0w.pdf)
 
 The useful question is therefore not simply “did they cross?” Ask “what dismissal, which run, which survivor and is the over finished?” For a real match, use its applicable playing conditions rather than transferring these six-ball examples to every competition.
+
+## Related reading
+
+- [Run out complete control rule and how the wicket is broken](/blog/run-out-complete-control-rule)
+- [Short Runs in Cricket: Accidental, Deliberate and Abandoned](/blog/short-run-cricket-accidental-deliberate)

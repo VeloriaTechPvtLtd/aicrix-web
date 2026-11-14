@@ -16,7 +16,7 @@ The current definition is about the ability to keep possession or release the ba
 
 | Action at the wicket | Relevant question |
 | --- | --- |
-| A fielder’s right hand removes a bail | Was the ball controlled in that hand? Holding it only in the other hand is not enough |
+| A fielder’s right hand or arm removes a bail | Was the ball controlled in the right hand (the hand of that arm)? Holding it only in the other hand is not enough |
 | A throw strikes the stumps directly | Did the ball fairly break the wicket? No intervening catch is necessary |
 | A bowler deflects a shot onto the stumps | Follow the ball, not whether the bowler ever possessed it |
 
@@ -35,3 +35,8 @@ Consider two hypothetical replays. In the first, a batter’s bat never touches 
 In men’s T20Is, Appendix D 4.1–4.2 specifies the replay timing. For ordinary bails, identify their first complete loss of contact, confirmed by subsequent permanent removal. For LED wickets, the first illuminated frame is used with the same subsequent-removal requirement. A flash alone is not the whole test. [October 2026 conditions](https://images.icc-cricket.com/image/upload/prd/bsxcho7ufe2pjban0wjp.pdf).
 
 For a useful explanation, keep four observations separate: how the wicket broke, possession when relevant, the batter’s grounding sequence, and the applicable competition rules. State which observation is missing rather than turning an incomplete clip into certainty. That makes the decision easier to understand without inventing a new rule that every fielder must first hold the ball.
+
+## Related reading
+
+- [Stumped versus run out and the wicketkeeper exception](/blog/stumped-vs-run-out-cricket)
+- [Who faces the next ball after a catch or run out](/blog/who-faces-next-ball-catch-run-out)

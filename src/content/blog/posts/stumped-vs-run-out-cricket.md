@@ -41,3 +41,8 @@ Think of a missed shot followed by a rebound from a keeper’s pad. The relevant
 Leaving the ground after receiving the delivery to avoid injury has specific stumping protection. Run-out has its own injury-avoidance wording. A wide, unlike a no-ball, can permit stumping, subject to the match still continuing. [MCC Laws 38.2, 39.3 and 39.4](https://www.lords.org/getattachment/e8b12929-1e84-4927-af4e-2a5875b53589/Laws-of-Cricket-2017-Code-4th-Edition-%282026%29.pdf)
 
 For a real incident, record the delivery status, striker’s action, each fielder’s involvement and the moment the wicket broke. Then apply the governing competition’s conditions. Whether the wicket was fairly broken and who faces next are separate checks, not reasons to change the dismissal label.
+
+## Related reading
+
+- [Run out complete control rule and how the wicket is broken](/blog/run-out-complete-control-rule)
+- [Wicketkeeper no ball rule and the winning extra](/blog/wicketkeeper-no-ball-rule)

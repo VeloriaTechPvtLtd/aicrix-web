@@ -43,3 +43,8 @@ A helmet being worn is not the stored helmet described in 28.3. The current catc
 A batter’s helmet is likewise not fielding-side equipment. A photograph showing ball-to-helmet contact is therefore insufficient: identify who owns it and whether it was worn, stored or used in an action.
 
 Keep the five-run award separate from the ball-count decision and from any claim about a fair catch. That avoids turning one recognizable object into the wrong rule for three different situations.
+
+## Related reading
+
+- [Dead ball rules and whether the delivery counts](/blog/dead-ball-cricket-delivery-counts)
+- [Byes, no-balls and maiden overs: which runs count against the bowler?](/blog/cricket-extras-bowler-runs-maiden-over)

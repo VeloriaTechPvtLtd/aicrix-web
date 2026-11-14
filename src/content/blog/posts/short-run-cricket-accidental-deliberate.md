@@ -41,3 +41,8 @@ Suppose A and B initially judge a gap large enough to consider two, then abandon
 Under the [ODI conditions, clause 18.4.2](https://images.icc-cricket.com/image/upload/prd/bxkzkcyvfn6tvi70zh0w.pdf), an ordinary boundary means accidental short running is disregarded. An overthrow or wilful-act boundary is an exception requiring its separate calculation.
 
 Keep a simple audit trail: attempted movement, actual completion, umpire’s classification, boundary or extra, and final award. That sequence is more reliable than a universal “runs attempted minus one” calculator. These examples isolate the short-run issue; they do not decide whether a batter was run out or a boundary was an overthrow.
+
+## Related reading
+
+- [Overthrow vs misfield: boundary scoring explained](/blog/overthrow-vs-misfield-cricket)
+- [Dead ball rules and whether the delivery counts](/blog/dead-ball-cricket-delivery-counts)

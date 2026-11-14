@@ -58,3 +58,8 @@ The word “forfeit” can be misleading without its object. Giving up an inning
 A declaration also ends an innings, not necessarily the day. Intervals and close-of-play rules decide when the next innings can begin. Nor does a declaration itself enforce the follow-on: that is a separate decision with separate eligibility conditions.
 
 To read a scorecard correctly, identify which innings was closed, whether it had started, the runs already scored and the batting opportunities still available. Those facts explain the target more reliably than treating every early innings ending as the same event.
+
+## Related reading
+
+- [Follow-on rules: how to calculate the runs needed](/blog/follow-on-rules-calculator)
+- [Tie vs draw in Test cricket: why level scores are not enough](/blog/tie-vs-draw-test-cricket)

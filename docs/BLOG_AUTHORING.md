@@ -16,23 +16,23 @@ the old URL, configured for the deployment host.
    ---
    title: "Reading Cricket Pitch Reports"
    excerpt: "A practical guide to interpreting pitch conditions and their limits when assessing a cricket match."
-   date: "2026-11-09"
-   image: /og-image.png
-   author: AICRIX Team
+   status: draft
    ---
    ```
 
-   Use the actual publication date in `YYYY-MM-DD` format, a unique title, and a
+   Keep drafts undated. At authorized release, set `status: published` and the actual
+   `date` in `YYYY-MM-DD` format. Use a unique title and a
    concise, accurate excerpt. Quote text containing punctuation such as colons.
    `image` and `author` are optional; the default image is `/og-image.png`.
    For a custom local image, place it in `public/` and use its root-relative URL.
-   Social metadata currently declares images as 1200 × 630, so use that size.
+   Add `imageAlt` and an honest `imageCaption` for custom editorial imagery.
+   Social metadata does not invent image dimensions.
 
 3. Write the article below the frontmatter. The page already renders its title as
    an H1; start body sections with `##`, then `###` for subsections. Use standard
    Markdown paragraphs, lists, links and images. The renderer is `react-markdown`;
    MDX, embedded React and raw HTML are not supported by the current configuration.
-   GitHub-style Markdown tables are not enabled.
+   GitHub-style Markdown tables are enabled through remark-gfm.
 4. Link to relevant existing articles using `/blog/<slug>` and include useful
    source links for factual claims. Add descriptive alt text to article images.
    Verify match dates, venues, player availability and statistics before publishing.
@@ -69,35 +69,34 @@ origin, normally `https://aicrix.com`. See `docs/SEARCH_CONSOLE.md` for search
 verification guidance. Preserve all existing blog URLs and legal/contact routes
 when changing the design.
 
-## Reviewed draft staging (2026-11-14)
+## Publication safety
 
-New articles require `status: draft` or `status: published`. Drafts may omit `date`; published articles require a real ISO publication date. Optional `updated` must reflect substantive review, not the build time. Future-dated articles are not published. Existing nine URLs retain their prior behavior.
+New articles require `status: draft` or `status: published`. Drafts may omit `date`; published articles require a real ISO date. Optional `updated` must reflect a substantive review, not build time. Future-dated articles are excluded. The nine legacy URLs retain their prior publication behavior.
 
-Normal builds omit drafts from routes, index and sitemap. For local editorial review only, run `BLOG_PREVIEW=true npm run build`; preview blog pages are noindex and its robots disallows crawling. Do not deploy preview output. Rebuild normally before any authorized production release. Draft PR does not authorize release.
+Normal builds omit drafts from routes, index and sitemap. Use `BLOG_PREVIEW=true npm run build` only for local editorial review; all preview blog pages are noindex, robots disallows crawling, and the sitemap is empty. Never deploy preview output. Rebuild normally before an authorized release. A draft PR does not authorize release.
 
-Use `image`, `imageAlt`, and `imageCaption` for local editorial assets. AI-generated illustrations must be disclosed and never represented as photographs of real matches. Markdown tables are rendered with GFM and a horizontally scrollable region.
+AI-generated illustrations must be disclosed and never represented as photographs of actual matches. Use relevant tables and worked examples rather than decorative imagery where they better answer the question.
 
-## Batch coverage and release gates
+## Current review coverage
 
-This initial batch stages nine revised educational articles. Ten source drafts received editorial review; venue-average versus par is held for consolidation with the existing venue report. This is not completion of the 503-draft collection: 494 drafts are not integrated here. No new article is release-approved. In particular, the tie/draw historical example still needs independent scorecard corroboration. The retired-hurt article explicitly scopes its playing-condition claims to ICC Test conditions; do not extend those claims to IPL without a verified source.
+68 individually revised educational articles are staged from a frozen 503-draft membership snapshot. 70 source drafts have received individual editorial review; the venue average/par manuscript has additionally been consolidated into the existing venue URL, while probable/confirmed playing XI remains held for its existing guide. 434 drafts are not integrated. The first38 staged articles have also passed an independent scoped primary-source/arithmetic audit; this is not publication approval. The hit-wicket article is expressly MCC-scoped and no longer asserts the disputed cross-reference interpretation.
 
-Before changing any article to published:
-- Recheck every factual claim and dated playing condition against the linked primary source.
-- Map one distinct search intent to a canonical URL; update existing coverage instead of duplicating it.
-- Check worked calculations, headings, descriptive links, mobile tables, image relevance and accessibility.
-- Assign accountable editorial ownership and actual publication/review dates. Do not invent author credentials.
-- Verify all internal links resolve in the intended release, not only in preview.
-- Run `npm run test:content`, TypeScript, build and `npm run test:export`; extend the fixed staging-count test as batches change.
+Zero new articles are release-approved. Rendered/mobile/accessibility review and accountable editorial release approval remain outstanding. Local Chromium cannot start under this environment's socket restriction; HTML tests are not a substitute for visual QA. Independent review of later batches is ongoing. Private source pages and provenance manifests must never enter this public repository.
+
+## Release checklist
+
+- Recheck each factual claim and effective playing condition against linked primary evidence. Preserve historical context and explicit fictional examples.
+- Map each search intent to one canonical URL. Update existing coverage rather than creating a competing duplicate.
+- Verify arithmetic, headings, tables, source links, alt text and internal destinations. Publishing a page that links to an unpublished article fails content validation.
+- Assign accountable editorial ownership and real publication/review dates; never invent credentials or performance metrics.
+- Run `npm run test:content`, TypeScript, lint, production build and `npm run test:export`. Update the explicit staged-count assertion when scope changes.
+- Run `npm run test:preview` after a local preview build. It checks all draft routes, semantic tables, image disclosure, noindex, dates and sitemap safety. Rebuild normally afterward.
 - Obtain editorial release approval separately from draft-PR review.
 
-## Organic growth and measurement
+## Organic growth
 
-Prioritize answer-first explanations, useful examples, credible sources, and natural links to relevant guides over article volume. Article structured data must match visible content. There is no special AI-search markup requirement and no ranking guarantee. After an authorized public release, verify canonical/indexing status and submit the sitemap in Search Console. Do not use Google's Indexing API for blog articles. Track indexed canonical pages, query impressions, clicks, CTR and meaningful app-download conversions by topic; consolidate low-value duplicate intent rather than scaling thin pages.
+Prioritize answer-first explanations, useful examples, credible sources and natural internal links over page count. Structured data must match visible content. Ordinary SEO applies to AI search; there is no special AI schema requirement or ranking guarantee. After authorized publication, verify canonical/indexing status and submit the sitemap through Search Console. Do not use Google's Indexing API for ordinary blog posts. Track indexed canonical pages, query impressions, clicks, CTR and meaningful download conversions by topic; consolidate weak duplicate intent rather than scaling thin pages.
 
 References: https://developers.google.com/search/docs/appearance/ai-features ; https://developers.google.com/search/docs/appearance/structured-data/article ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 
-Run `npm run test:preview` after a local `BLOG_PREVIEW=true npm run build`. It verifies all staged article routes are noindex and the preview sitemap is empty. Rebuild without BLOG_PREVIEW before running production export tests. Browser visual QA is separate from these HTML checks.
-
-## Second staging batch
-
-14 further individually revised articles are staged (23 new drafts total); 480 of the 503 snapshot are not integrated. Hit-wicket remains outside the PR while an MCC/ICC cross-reference discrepancy is resolved. An independent primary-source audit of the first nine found no substantive factual or arithmetic corrections; the tie/draw example is corroborated by the BCCI report, resolving that factual hold. This does not substitute for editorial release approval or rendered/mobile QA. All new articles remain status:draft.
+The existing how-ai-predicts-cricket URL has also been rewritten to remove unsupported model-count, data-history and89% accuracy claims, preserving its original publication date and recording a substantive correction date. The existing venue, match-preview and welcome articles have also been corrected without changing their canonical URLs. Dated legacy forecasts remain under review.

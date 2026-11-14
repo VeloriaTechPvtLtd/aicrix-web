@@ -37,7 +37,7 @@ The one-run extra takes Team B to 155/6 and completes the chase. The batter does
 
 These numbers illustrate the rule; they are not a report of a named match.
 
-## Why a replacement ball is not required after victory
+## Why another delivery is not required after victory
 
 Under MCC Law 16.6, reaching the result ends the match, subject to the Law's specified exceptions. In this example, there is no remaining target to pursue. The usual need to replace an invalid delivery does not require play after the victory. [MCC Laws 16.6 and 21](https://www.lords.org/getattachment/e8b12929-1e84-4927-af4e-2a5875b53589/Laws-of-Cricket-2017-Code-4th-Edition-%282026%29.pdf)
 
@@ -49,3 +49,8 @@ Free-hit provisions belong to the relevant competition's playing conditions. The
 
 Keep the umpire's keeper-position ruling distinct from other penalties such as fielding restrictions. They can arise in the same passage of play without being the same offence. A useful explanation identifies the infringement, the awarded extra, the valid-ball count and whether the match has already ended.
 
+
+## Related reading
+
+- [Byes, no-balls and maiden overs: which runs count against the bowler?](/blog/cricket-extras-bowler-runs-maiden-over)
+- [Stumped versus run out and the wicketkeeper exception](/blog/stumped-vs-run-out-cricket)

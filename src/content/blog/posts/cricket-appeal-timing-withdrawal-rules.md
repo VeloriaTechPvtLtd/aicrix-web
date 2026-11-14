@@ -52,3 +52,8 @@ The report treats the run-out decision as technically correct and the withdrawal
 An appeal asks the umpire for a dismissal decision. A Player Review challenges an eligible decision under a competition’s review protocol. This guide does not replace the review timer or allowance rules.
 
 Before explaining a disputed incident, identify the original decision, any mistaken departure, the captain’s request if one occurred, the umpire’s response, and the next-delivery timeline. If a clip does not show those stages, describe the missing evidence rather than inventing a completed withdrawal.
+
+## Related reading
+
+- [Obstructing the Field: Running Lines and Returning the Ball](/blog/obstructing-the-field-cricket-rules)
+- [Hit wicket rules and when breaking your own stumps is not out](/blog/hit-wicket-cricket-rules)

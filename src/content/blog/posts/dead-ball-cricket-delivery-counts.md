@@ -48,3 +48,8 @@ Four events have advanced the count by only two: 75 to 77 valid balls. Yet both 
 A no-ball call does not itself make the ball dead. Conversely, a dead-ball event is not inherently a no-ball or an extra. Check the applicable scoring provision rather than adding or removing runs merely because play stopped. [ICC clause 21.13 and Law 20 framework](https://images.icc-cricket.com/image/upload/prd/a8114zro5tkioifz0jqg.pdf)
 
 Record three things separately: the reason play ended, the runs allowed, and whether a valid delivery was added. A compact score feed that says only “dead ball” is missing the information needed to answer the other two questions.
+
+## Related reading
+
+- [Five penalty runs when the ball hits a helmet on the ground](/blog/ball-hits-fielding-helmet-penalty-runs)
+- [Five-ball and seven-ball overs: what happens when the umpire miscounts?](/blog/miscounted-over-cricket-rules)
