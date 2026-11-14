@@ -30,3 +30,13 @@ test('worked tables and disclosed illustration render as semantic HTML', () => {
  test('preview guide inherits the global noindex protection', () => {
  assert.ok(readFileSync('out/guides/playing-xi.html', 'utf8').includes('noindex, nofollow'));
  });
+
+test('article layout has a visible summary, reading metadata and one page heading', () => {
+  const html = readFileSync('out/blog/batting-average-vs-strike-rate.html', 'utf8');
+  assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1);
+  for (const marker of ['blog-article-container', 'blog-article-excerpt', 'blog-article-meta', 'min read', 'blog-article-figure', 'All articles']) assert.ok(html.includes(marker), marker);
+  assert.ok(html.includes('Calculate batting average and strike rate with worked examples'));
+  assert.ok(!html.includes('dateTime=""'));
+  const css = readFileSync('src/features/blog/blog-article.css', 'utf8');
+  for (const rule of ['@media (max-width: 600px)', 'max-height: 360px', ':focus-visible', 'min-width: 520px']) assert.ok(css.includes(rule), rule);
+});
