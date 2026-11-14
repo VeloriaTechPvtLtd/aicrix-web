@@ -1,6 +1,6 @@
 ---
 title: "Cricket pitch dimensions and crease distances"
-excerpt: "Cricket pitch dimensions and crease distances."
+excerpt: "Understand the 22-yard pitch, bowling and popping creases, and how official measurements differ from the space between the popping creases."
 status: draft
 ---
 

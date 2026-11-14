@@ -97,3 +97,7 @@ Prioritize answer-first explanations, useful examples, credible sources, and nat
 References: https://developers.google.com/search/docs/appearance/ai-features ; https://developers.google.com/search/docs/appearance/structured-data/article ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 
 Run `npm run test:preview` after a local `BLOG_PREVIEW=true npm run build`. It verifies all staged article routes are noindex and the preview sitemap is empty. Rebuild without BLOG_PREVIEW before running production export tests. Browser visual QA is separate from these HTML checks.
+
+## Second staging batch
+
+14 further individually revised articles are staged (23 new drafts total); 480 of the 503 snapshot are not integrated. Hit-wicket remains outside the PR while an MCC/ICC cross-reference discrepancy is resolved. An independent primary-source audit of the first nine found no substantive factual or arithmetic corrections; the tie/draw example is corroborated by the BCCI report, resolving that factual hold. This does not substitute for editorial release approval or rendered/mobile QA. All new articles remain status:draft.
