@@ -88,3 +88,8 @@ test('homepage content is server rendered, assets are local, and accuracy claims
  for (const text of ['Late changes and alert timing', '17:35', '17:53', 'Radha Yadav', '<table']) assert.ok(html.includes(text), text);
  assert.ok(!existsSync('out/blog/probable-confirmed-playing-xi-late-changes.html'));
  });
+
+ test('probability material enriches the existing guide without fabricated forecasts', () => {
+ const html = readFileSync('out/guides/match-prediction.html', 'utf8');
+ for (const text of ['Read uncertainty without inventing a forecast', '22 from 18', '32 from 18', 'not a schedule promising seven wins']) assert.ok(html.includes(text), text);
+ });

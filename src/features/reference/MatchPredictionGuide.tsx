@@ -1,3 +1,5 @@
+import ReactMarkdown from "react-markdown";
+import { matchPredictionUncertainty } from "@/content/guides/match-prediction-uncertainty";
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
@@ -61,6 +63,7 @@ export function MatchPredictionGuide() {
             <a href="#start-with-probability">{"Start with the probability"}</a>
             <a href="#read-the-reasons">{"Read the reasons"}</a>
             <a href="#keep-context-current">{"Keep the context in view"}</a>
+            <a href="#reading-uncertainty">{"Read uncertainty clearly"}</a>
             <a href="#questions">{"Common questions"}</a>
           </nav>
           <div className="article-body">
@@ -104,6 +107,10 @@ export function MatchPredictionGuide() {
                   "Treat a preview as a snapshot. A changed lineup or different conditions can make an earlier assessment less useful. Check the match details available to you before carrying an expectation forward."
                 }
               </p>
+            </section>
+            <section id="reading-uncertainty">
+              <h2>Read uncertainty without inventing a forecast</h2>
+              <ReactMarkdown components={{ h2: ({ children }) => <h3>{children}</h3> }}>{matchPredictionUncertainty}</ReactMarkdown>
             </section>
             <section id="questions">
               <h2>{"Common questions"}</h2>
