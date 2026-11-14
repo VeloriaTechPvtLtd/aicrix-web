@@ -10,7 +10,7 @@ function getBlogSlugsWithDates() {
   return fs.readdirSync(POSTS_DIR).filter(name => name.endsWith(".md")).flatMap(name => {
     const slug = name.replace(/\.md$/, "");
     const { data } = matter(fs.readFileSync(path.join(POSTS_DIR, name), "utf8"));
-    return isPublished(data, slug) ? [{ slug, lastmod: dateString(data.updated) || dateString(data.date) }] : [];
+    return isPublished(data, slug) && data.archived !== true ? [{ slug, lastmod: dateString(data.updated) || dateString(data.date) }] : [];
   });
 }
 const publishedSlugs = new Set(getBlogSlugsWithDates().map(post => post.slug));

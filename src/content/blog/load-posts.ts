@@ -14,6 +14,7 @@ export interface BlogPostMeta {
   imageAlt?: string;
   imageCaption?: string;
   preview: boolean;
+  archived: boolean;
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -72,6 +73,7 @@ function loadAll(): BlogPost[] {
       imageAlt: data.imageAlt as string | undefined,
       imageCaption: data.imageCaption as string | undefined,
       preview,
+      archived: data.archived === true,
     });
   }
   posts.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.slug.localeCompare(b.slug));
@@ -80,15 +82,19 @@ function loadAll(): BlogPost[] {
 
 let cached: BlogPost[] | null = null;
 
-export function getBlogPosts(): BlogPost[] {
+function getAllPosts(): BlogPost[] {
   if (!cached) cached = loadAll();
   return cached;
 }
 
+export function getBlogPosts(): BlogPost[] {
+  return getAllPosts().filter(post => !post.archived);
+}
+
 export function getPostBySlug(slug: string): BlogPost | undefined {
-  return getBlogPosts().find((p) => p.slug === slug);
+  return getAllPosts().find((p) => p.slug === slug);
 }
 
 export function getAllSlugs(): string[] {
-  return getBlogPosts().map((p) => p.slug);
+  return getAllPosts().map((p) => p.slug);
 }

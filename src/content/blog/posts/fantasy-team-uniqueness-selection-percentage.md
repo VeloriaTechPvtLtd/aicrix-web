@@ -23,7 +23,7 @@ Multiplying A’s 50% by B’s 50% gives 25%. That assumes their choices are ind
 
 ## A zero output is not proof
 
-Consider a hypothetical checker that multiplies field size by the complements of selection shares and labels an output of zero as unique. With1,000 identical entries, all relevant shares are 100%, producing zero despite each entry having 999 identical rivals. The label fails this simple counterexample. This is a test of an invented formula, not a claim about a running service.
+Consider a hypothetical checker that multiplies field size by the complements of selection shares and labels an output of zero as unique. With 1,000 identical entries, all relevant shares are 100%, producing zero despite each entry having 999 identical rivals. The label fails this simple counterexample. This is a test of an invented formula, not a claim about a running service.
 
 ## Count actual lineups instead
 

@@ -15,6 +15,7 @@ export const BlogPostPage = ({ post }: { post: BlogPost }) => {
   return (
     <PageLayout title={post.title}>
       {post.preview && <p role="status" className="mb-6 rounded-xl border border-amber-300/40 p-4 text-sm">Editorial preview. Not published or approved for release.</p>}
+      {post.archived && <p role="note" className="mb-6 rounded-xl border border-amber-300/40 p-4 text-sm">Archived article. This page is not current match advice.</p>}
       <header className="mb-6 flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-2">
         <time className="text-[var(--muted)] text-sm shrink-0" dateTime={post.date}>
           {formattedDate}

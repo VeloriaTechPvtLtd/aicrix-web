@@ -30,7 +30,7 @@ This also explains why a delivery described as “short” in commentary is not 
 
 ## Does a high wide use the allowance
 
-Yes. The men's T20I conditions explicitly say that a fast short delivery called wide under the high-delivery provision still uses the allowance. A high ball that prevents a normal cricket stroke is covered by that wide provision. Once the one-delivery T20I allowance is exceeded, the quota rule calls for a no-ball. [ICC T20I conditions, 41.6.1.7–41.6.1.8](https://images.icc-cricket.com/image/upload/prd/bsxcho7ufe2pjban0wjp.pdf)
+Yes. The men's T20I conditions explicitly say that a fast short delivery called wide under the high-delivery provision still uses the allowance. A ball passing above the batter’s upright head height at the popping crease that prevents a normal cricket stroke is covered by that wide provision. Once the one-delivery T20I allowance is exceeded, the quota rule calls for a no-ball. [ICC T20I conditions, 41.6.1.7–41.6.1.8](https://images.icc-cricket.com/image/upload/prd/bsxcho7ufe2pjban0wjp.pdf)
 
 The useful distinction is between an over's legal-ball progress and its short-delivery allowance. They are different counters. A scoring display that repeats a ball number after an extra does not, by itself, show that every other restriction has reset.
 

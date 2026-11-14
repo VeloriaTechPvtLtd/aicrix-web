@@ -1,3 +1,4 @@
+import matter from 'gray-matter';
 import policy from '../src/content/blog/content-policy.cjs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -30,7 +31,12 @@ test('all nine existing blog posts keep their rendered URL and canonical', () =>
     const html = readFileSync(`out/blog/${slug}.html`, 'utf8');
     assert.ok(html.includes(`rel="canonical" href="https://aicrix.com/blog/${slug}"`), slug);
     assert.ok(html.includes('"@type":"Article"'), slug);
-    assert.ok(sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
+    const { data } = matter(readFileSync(`src/content/blog/posts/${post}`, 'utf8'));
+    if (data.archived) {
+      assert.ok(!sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
+      assert.ok(html.includes('noindex, follow'), slug);
+      assert.ok(!readFileSync('out/blog.html', 'utf8').includes(`/blog/${slug}`), slug);
+    } else assert.ok(sitemap.includes(`https://aicrix.com/blog/${slug}`), slug);
   }
 });
 

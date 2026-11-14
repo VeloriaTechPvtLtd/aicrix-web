@@ -18,6 +18,7 @@ function dateString(value) {
 }
 function validatePost(data, slug) {
   const errors = [];
+  if (data.archived !== undefined && typeof data.archived !== "boolean") errors.push("archived must be boolean");
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) errors.push('invalid slug');
   for (const key of ['title', 'excerpt']) if (typeof data[key] !== 'string' || !data[key].trim()) errors.push(`missing ${key}`);
   if ((data.status !== 'draft' || data.date) && !dateString(data.date)) errors.push('invalid publication date');

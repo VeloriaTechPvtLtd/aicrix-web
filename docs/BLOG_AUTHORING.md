@@ -71,7 +71,7 @@ when changing the design.
 
 ## Publication safety
 
-New articles require `status: draft` or `status: published`. Drafts may omit `date`; published articles require a real ISO date. Optional `updated` must reflect a substantive review, not build time. Future-dated articles are excluded. The nine legacy URLs retain their prior publication behavior.
+New articles require `status: draft` or `status: published`. Drafts may omit `date`; published articles require a real ISO date. Optional `updated` must reflect a substantive review, not build time. Future-dated articles are excluded. The nine legacy URLs retain their routes and date history. Archived legacy pages remain accessible but are noindex and excluded from discovery and the sitemap.
 
 Normal builds omit drafts from routes, index and sitemap. Use `BLOG_PREVIEW=true npm run build` only for local editorial review; all preview blog pages are noindex, robots disallows crawling, and the sitemap is empty. Never deploy preview output. Rebuild normally before an authorized release. A draft PR does not authorize release.
 
@@ -79,7 +79,7 @@ AI-generated illustrations must be disclosed and never represented as photograph
 
 ## Current review coverage
 
-68 individually revised educational articles are staged from a frozen 503-draft membership snapshot. 70 source drafts have received individual editorial review; the venue average/par manuscript has additionally been consolidated into the existing venue URL, while probable/confirmed playing XI remains held for its existing guide. 434 drafts are not integrated. The first38 staged articles have also passed an independent scoped primary-source/arithmetic audit; this is not publication approval. The hit-wicket article is expressly MCC-scoped and no longer asserts the disputed cross-reference interpretation.
+98 individually revised educational articles are staged from a frozen 503-draft membership snapshot. 100 source drafts have received individual editorial review; the venue average/par manuscript has additionally been consolidated into the existing venue URL, while probable/confirmed playing XI remains held for its existing guide. 404 drafts are not integrated. The first83 staged articles have also passed an independent scoped primary-source/arithmetic audit; this is not publication approval. The hit-wicket article is expressly MCC-scoped and no longer asserts the disputed cross-reference interpretation.
 
 Zero new articles are release-approved. Rendered/mobile/accessibility review and accountable editorial release approval remain outstanding. Local Chromium cannot start under this environment's socket restriction; HTML tests are not a substitute for visual QA. Independent review of later batches is ongoing. Private source pages and provenance manifests must never enter this public repository.
 
@@ -99,4 +99,4 @@ Prioritize answer-first explanations, useful examples, credible sources and natu
 
 References: https://developers.google.com/search/docs/appearance/ai-features ; https://developers.google.com/search/docs/appearance/structured-data/article ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 
-The existing how-ai-predicts-cricket URL has also been rewritten to remove unsupported model-count, data-history and89% accuracy claims, preserving its original publication date and recording a substantive correction date. The existing venue, match-preview and welcome articles have also been corrected without changing their canonical URLs. Dated legacy forecasts remain under review.
+The existing how-ai-predicts-cricket URL has also been rewritten to remove unsupported model-count, data-history and89% accuracy claims, preserving its original publication date and recording a substantive correction date. The existing venue, match-preview and welcome articles have also been corrected without changing their canonical URLs. Five dated legacy forecasts have been replaced with clear archival correction notices; unsupported predictions are withdrawn, not replaced with invented results. Their URLs and original dates are preserved, with archived:true keeping them out of the blog listing and sitemap and marking them noindex. These proposed corrections have not been deployed.

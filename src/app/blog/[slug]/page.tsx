@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(TWITTER_SITE && { site: TWITTER_SITE }),
       ...(TWITTER_CREATOR && { creator: TWITTER_CREATOR }),
     },
-    robots: post.preview ? "noindex, nofollow" : "index, follow",
+    robots: post.preview ? "noindex, nofollow" : post.archived ? "noindex, follow" : "index, follow",
   };
 }
 
